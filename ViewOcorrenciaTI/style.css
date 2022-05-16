@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Essa classe mantém meu header responsivo de acordo com o card*/
+.container-fluid  {
+    display: flex;
+    align-items: center;
+    width: 78vw;
+    justify-content: space-between;
+    
+
+}
+
+/* card quadrado principal */
+.card {
+    background: #b40d0d;
+    margin-top: 4vh;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+    border-radius: 0px;
+   border: none;
+    width: 78vw;
+    height: 80vh;
+
+
+}
+
+/* Manipulação dentro da div 'card' */
+.row {
+
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.col {
+    text-align: center
+}
+
+
+/* Manipulação dos cards */
+.col .card-img {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+   
+}
+
+/* Manipulação dentro da div 'card' */
+.card .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 10vh;
+   
+}
+
+.back {
+    min-width: 55px;
+    max-width:25px;
+}
+
+
+.logo{
+min-width: 100px;
+max-width:250px;
+}
+
+.descricao{
+    display: grid;
+    align-items: center;
+
+}
+
+.card .form-control {
+
+    width: 50vw;
+    max-height: 1350px;
+    border-radius: 0px;
+    border: none;
+    background: fuchsia;
+
+}
+
+
+.card .form-control1 {
+margin-top: 80px;
+width: 50vw;
+border: none;
+height: 50vh;
+background: lawngreen;
+
+}
+
+.img{
+    min-width: 78px;
+    margin-right:80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+.btn{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 770px;
+    position: relative;
+}

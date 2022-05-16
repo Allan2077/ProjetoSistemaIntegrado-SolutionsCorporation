@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* logo */
+.logo {
+  width: 12vw;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Essa classe mantém meu header responsivo de acordo com o card*/
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  justify-content: space-between;
+}
+
+/* Manipulação dos icones do nav no cabeçalho junto com a logo*/
+img {
+  margin-left: 25px;
+  width: 30px;
+}
+
+/* Manipulação dos icones do nav no cabeçalho */
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Manipulação dentro do alert*/
+.alert {
+  position: relative;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Manipulação dentro do alert*/
+.alert>div {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  background: red;
+  border-radius: 100%;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 14px
+}
+
+/* card quadrado principal */
+.card {
+  margin-top: 5vh;
+  overflow: auto;
+  border-radius: 15px;
+  display: flex;
+  width: 70vw;
+  height: 70vh;
+  background: #fff;
+  box-shadow: rgba(38, 48, 38, 0.986) 0px 54px 55px, rgba(60, 77, 56, 0.966) 0px -12px 30px, rgb(129, 25, 143) 0px 4px 6px, rgba(3, 56, 5, 0.986) 0px 12px 13px, rgb(101, 134, 101) 0px -3px 5px;
+}
+
+/* Manipulação dentro da div 'card' */
+.row {
+
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  text-align: center
+}
+
+/* Manipulação dos cards */
+.col .card-img {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 90%;
+  text-align: center;
+}
+
+/* Manipulação dentro da div 'card' */
+.card .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60px;
+  height: 100%;
+}
+
+/* Título da escrita acima dos card */
+h2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  /* Nunca esquecer da font-family importada no google-font e declarada aqui no topo*/
+  font-family: 'Arsenal', sans-serif;
+}
+
+.darkMode {
+  background: #181515 !important;
+  color: var(--branco) !important;
+}
+
+.darkModeCard {
+  color: #fff;
+  background: #1b1b1b;
+  box-shadow: rgb(58, 88, 48) 0px 54px 55px, rgb(73, 211, 31) 0px -12px 30px, rgb(255, 0, 0) 0px 4px 6px, rgba(73, 211, 31) 0px 12px 13px, rgb(73, 211, 31) 0px -3px 5px !important;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
+}
+
+.toggle {
+  height: 32px;
+  width: 52px;
+  border-radius: 16px;
+  display: flex;
+  position: relative;
+  margin: 0;
+  border: 2px solid #505c33;
+  background: linear-gradient(180deg, #cccdcf 0%, #496349 100%);
+  transition: all 0.2s ease;
+  margin-left: 20px;
+}
+
+.toggle:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgb(217, 245, 224);
+  box-shadow: 0 1px 2px rgb(235, 0, 0);
+  transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+
+.toggle:checked {
+  border-color: #94df9b;
+}
+
+.toggle:checked:after {
+  transform: translatex(20px);
+}
