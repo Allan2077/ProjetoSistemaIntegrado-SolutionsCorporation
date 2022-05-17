@@ -2,52 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
+
 /*Essa classe mantém meu header responsivo de acordo com o card*/
-.container-fluid  {
+
+.container-fluid {
     display: flex;
     align-items: center;
     width: 78vw;
     justify-content: space-between;
-    
-
 }
 
+
 /* card quadrado principal */
+
 .card {
     background: #b40d0d;
     margin-top: 4vh;
-   display: flex;
-   justify-content:center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 0px;
-   border: none;
+    border: none;
     width: 78vw;
     height: 80vh;
-
-
 }
 
-/* Manipulação dentro da div 'card' */
-.row {
 
+/* Manipulação dentro da div 'card' */
+
+.row {
     width: 80%;
     height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    flex-direction: column;
+    background: blue
 }
 
 .col {
@@ -56,6 +55,7 @@ body {
 
 
 /* Manipulação dos cards */
+
 .col .card-img {
     display: flex;
     justify-content: center;
@@ -64,68 +64,64 @@ body {
     cursor: pointer;
     width: 90%;
     text-align: center;
-   
 }
 
+
 /* Manipulação dentro da div 'card' */
-.card .container-fluid {
+
+.container-fluid {
     display: flex;
     align-items: center;
     justify-content: center;
-   
     height: 10vh;
-   
 }
 
 .back {
     min-width: 55px;
-    max-width:25px;
+    max-width: 25px;
 }
 
-
-.logo{
-min-width: 100px;
-max-width:250px;
+.logo {
+    min-width: 100px;
+    max-width: 250px;
 }
 
-.descricao{
+.descricao {
     display: grid;
     align-items: center;
-
 }
 
 .card .form-control {
-
+    margin-left: 40px;
     width: 50vw;
     max-height: 1350px;
     border-radius: 0px;
     border: none;
     background: fuchsia;
-
 }
 
-
-.card .form-control1 {
-margin-top: 80px;
-width: 50vw;
-border: none;
-height: 50vh;
-background: lawngreen;
-
+.form-control1 {
+    margin-top: 80px;
+    margin-left: 40px;
+    width: 50vw;
+    border: none;
+    height: 50vh;
+    background: rgb(126, 213, 38);
 }
 
-.img{
-    min-width: 78px;
-    margin-right:80px;
+.img {
+    
     justify-content: center;
     align-items: center;
-    margin-top: 65px;
+    width: 50px;
+
+
 }
-.btn{
-    width: 200px;
+
+.btn {
+    width: 120px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 770px;
-    position: relative;
+    margin-top: 10px;
+    height: 40px;
+    margin-left: 55vw;
 }

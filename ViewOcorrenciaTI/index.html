@@ -14,7 +14,7 @@
 
 <body>
 
-  <section>
+  <header>
 
     <!-- Essas classes mantem a responsividade dos icones ao quebrar a página a baixo da logo -->
     <nav class="navbar navbar-light bg-light">
@@ -23,75 +23,56 @@
 
         <img src="../Assets/Seta.svg" class="back">
         <img src="../Assets/LogoSolution.png" class="logo">
-      </div>
-
-
-
-
-      <section>
-        </div>
-        </div>
-    </nav>
-  </section>
-
-
-
-  <div class="card">
-    <div class="container-fluid">
-
-
-
-
-      <div class="img" >
-
-        <a onclick="user()" style="cursor: pointer;">
-          <img src="../Assets/Impressora.svg" >
-        </a>
-
-        <a onclick="user()" style="cursor: pointer;">
-          <img src="../Assets/Computador.svg" style="margin-top:30px;">
-        </a>
-
-        <a onclick="user()" style="cursor: pointer;">
-          <img src="../Assets/roteador.svg" style="margin-top:30px;">
-        </a>
-
+      </nav>
+    </header>
+    
+    
+    <main>
+      <div class="card">
+        <div class="container-fluid">
         
-        <a onclick="user()" style="cursor: pointer;">
-          <img src="../Assets/AddUser.svg"  style="margin-top:30px;">
-        </a>
         
-        <a onclick="user()" style="cursor: pointer;">
-          <img src="../Assets/more.svg" style="margin-top: 100%;">  
-        </a>
+        <div class="img">
+          
+          <a onclick="user()" style="cursor: pointer;">
+            <img src="../Assets/Impressora.svg">
+          </a>
+          
+          <a onclick="user()" style="cursor: pointer;">
+            <img src="../Assets/Computador.svg" style="margin-top:30px;">
+          </a>
+          
+          <a onclick="user()" style="cursor: pointer;">
+            <img src="../Assets/roteador.svg" style="margin-top:30px;">
+          </a>
+          
+
+          <a onclick="user()" style="cursor: pointer;">
+            <img src="../Assets/AddUser.svg" style="margin-top:30px;">
+          </a>
+          
+          <a onclick="user()" style="cursor: pointer;">
+            <img src="../Assets/more.svg" style="margin-top: 100px;">
+          </a>
+        </div>
+        
+        
+        <div class="descricao">
+          <input type="text" class="form-control">
+          <input type="text" class="form-control1">
+          <button type="button" class="btn btn-primary btn-lg" >Enviar</button>
+        </div>
       </div>
-
-
-
-
-
-      <div class="descricao">
-        <input type="text" class="form-control">
-        <input type="text" class="form-control1">
-      </div>
-      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+      
+      
     </div>
-
-
-  </div>
-  </div>
-  </section>
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
   </div>
+  </main>
 </body>
 
 </html>
