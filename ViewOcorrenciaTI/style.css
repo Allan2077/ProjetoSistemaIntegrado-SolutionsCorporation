@@ -92,7 +92,8 @@ body {
 }
 
 .card .form-control {
-    margin-left: 40px;
+    margin-left: 80px;
+    margin-bottom: 50px;
     width: 50vw;
     max-height: 1350px;
     border-radius: 0px;
@@ -102,7 +103,7 @@ body {
 
 .form-control1 {
     margin-top: 80px;
-    margin-left: 40px;
+    margin-left: 80px;
     width: 50vw;
     border: none;
     height: 50vh;
@@ -110,18 +111,80 @@ body {
 }
 
 .img {
-    
+    margin-top: 0px;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    width: 80px;
+    margin-right: 50px;
 
 
 }
 
 .btn {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 120px;
-    display: flex;
+
     margin-top: 10px;
     height: 40px;
     margin-left: 55vw;
+}
+
+@media(max-width : 1225px) {
+    body {
+        background: black;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+   
+
+    button {
+        background: forestgreen;
+
+    }
+
+    .card .form-control1 {
+        margin-left: 80px;
+        width: 40vw;
+        border: none;
+        height: 50vh;
+        background: rgb(126, 213, 38);
+
+    }
+
+    .card .form-control {
+        margin-bottom: -100px;
+        margin-left: 80px;
+        width: 40vw;
+
+        border-radius: 0px;
+        border: none;
+        background: fuchsia;
+    }
+
+    .btn {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        display: flex;
+        margin-top: 10px;
+        height: 40px;
+        margin-left: 80px
+    }
+
+    div .img{
+        background: darkcyan;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
