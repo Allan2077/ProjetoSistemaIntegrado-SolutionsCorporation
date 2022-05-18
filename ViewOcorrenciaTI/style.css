@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,69 +15,14 @@ body {
 }
 
 
-/*Essa classe mantém meu header responsivo de acordo com o card*/
-
 .container-fluid {
     display: flex;
     align-items: center;
-    width: 78vw;
+    width: 75vw;
     justify-content: space-between;
 }
 
 
-/* card quadrado principal */
-
-.card {
-    background: #b40d0d;
-    margin-top: 4vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px;
-    border: none;
-    width: 78vw;
-    height: 80vh;
-}
-
-
-/* Manipulação dentro da div 'card' */
-
-.row {
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background: blue
-}
-
-.col {
-    text-align: center
-}
-
-
-/* Manipulação dos cards */
-
-.col .card-img {
-    display: flex;
-    justify-content: center;
-    height: 20%;
-    border-radius: 40px;
-    cursor: pointer;
-    width: 90%;
-    text-align: center;
-}
-
-
-/* Manipulação dentro da div 'card' */
-
-.container-fluid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-}
 
 .back {
     min-width: 55px;
@@ -86,20 +34,51 @@ body {
     max-width: 250px;
 }
 
-.descricao {
-    display: grid;
+/*-------------------------------------------------------------------------------------------- Parte principal-------------------------------------------------------------------------------*/
+
+main .container-fluid {
+    background: #F5F5F5;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    border-radius: 0px;
+    border: none;
+    width: 75vw;
+    height: 80vh;
 }
 
-.card .form-control {
+.card img {
+
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.card {
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+
+
+.form-control {
     margin-left: 80px;
+    height: 50px;
     margin-bottom: 50px;
     width: 50vw;
     max-height: 1350px;
     border-radius: 0px;
     border: none;
-    background: fuchsia;
+    background: FFFFFF;
 }
+
+
 
 .form-control1 {
     margin-top: 80px;
@@ -107,34 +86,63 @@ body {
     width: 50vw;
     border: none;
     height: 50vh;
-    background: rgb(126, 213, 38);
+    background: FFFFFF;
 }
 
-.img {
-    margin-top: 0px;
-    justify-content: center;
+button.btn.btn-primary.btn-lg {
+    margin-left: 87%;
+    margin-top: 10px;
+    width: 9vw;
+
+
+    margin-top: 18px;
+
+
+
+}
+
+
+.card img {
+    height: 80px;
+    display: flex;
     align-items: center;
-    width: 80px;
-    margin-right: 50px;
 
+}
 
+.card {
+    border: none;
 }
 
 .btn {
-    text-align: center;
-    justify-content: center;
+    background: #708E67;
+    font-family: 'Arsenal', sans-serif;
+    letter-spacing: 8px;
+    display: flex;
     align-items: center;
-    width: 120px;
-
-    margin-top: 10px;
-    height: 40px;
-    margin-left: 55vw;
+    display: inline;
 }
 
+
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0bd711;
+    border-color: #ff4444;
+}
+
+.btn-primary {
+    border-color: #708973;
+    border-color: #f70e0e;
+}
+.btn-secundary{
+    background: #f516a3;
+}
+
+
+
+/* ------------------------------------------------------------------------------Media Query------------------------------------------------------------------------------------------------*/
 @media(max-width : 1225px) {
-    body {
-        background: black;
-    }
+
 
     * {
         margin: 0;
@@ -142,16 +150,14 @@ body {
         box-sizing: border-box;
     }
 
-   
-
     button {
         background: forestgreen;
 
     }
 
     .card .form-control1 {
-        margin-left: 80px;
-        width: 40vw;
+        margin-left: 10px;
+        width: 50vw;
         border: none;
         height: 50vh;
         background: rgb(126, 213, 38);
@@ -159,32 +165,33 @@ body {
     }
 
     .card .form-control {
-        margin-bottom: -100px;
-        margin-left: 80px;
-        width: 40vw;
-
+        margin-bottom: 15px;
+        margin-left: 10px;
+        width: 50vw;
         border-radius: 0px;
         border: none;
         background: fuchsia;
     }
 
-    .btn {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 120px;
+    .card {
         display: flex;
-        margin-top: 10px;
-        height: 40px;
-        margin-left: 80px
+        align-items: center;
+        justify-content: center;
+        margin-left: 9%;
+        border: none;
     }
 
-    div .img{
-        background: darkcyan;
-        display: grid;
-        justify-content: center;
+    .btn {
+
+        margin-right: 60px;
+        background: magenta;
+        display: flex;
         align-items: center;
+        justify-content: space-around;
+        font-family: 'Arsenal', sans-serif;
+
     }
+
 
 
 }
