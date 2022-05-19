@@ -1,197 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
 
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Arsenal', sans-serif;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        header {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        header a img:first-child {
+            width: 70px;
+        }
 
+        header img:last-child {
+            width: 300px;
+        }
 
-.container-fluid {
-    display: flex;
-    align-items: center;
-    width: 75vw;
-    justify-content: space-between;
-}
+        main {
+            margin: 20px;
+            padding: 0;
+            height: 85%;
+            width: 89%;
+            gap: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Arsenal', sans-serif;
+            background: #f5f5f5;
+        }
 
+        .controllers {
+            height: 95%;
+            display: flex;
+           
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+        }
 
+        a img {
 
-.back {
-    min-width: 55px;
-    max-width: 25px;
-}
+            width: 100px;
+            height: 150px;
+        }
 
-.logo {
-    min-width: 100px;
-    max-width: 250px;
-}
+        .container {
+            height: 90%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
-/*-------------------------------------------------------------------------------------------- Parte principal-------------------------------------------------------------------------------*/
+            background: #fff;
+        }
 
-main .container-fluid {
-    background: #F5F5F5;
-    margin-top: 4vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px;
-    border: none;
-    width: 75vw;
-    height: 80vh;
-}
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+            font-weight: 400;
+            margin-left: 20px;
+        }
 
-.card img {
+        p {
+            margin-left: 20px;
+        }
 
-    align-items: center;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
+        .title {
+            
+            margin: 20px 0;
+            width: 100%;
+       
+        }
 
-}
+        .desc {
+            height: 10%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background: white;
+            width: 100%;
+            box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.25);
+        }
 
-.card {
-    background: #F5F5F5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 70px;
+        .button-search {
+            height: 90%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        
+        main button {
+            border: none;
+            font-size: 36px;
+            width: 130px;
+            height: 50px;
+            color: white;
+            background: #708E67;
+            font-family: 'Arsenal', sans-serif;
+            letter-spacing: 8px;
+            border-radius: 10px;
+        }
 
-}
+        @media (max-width : 400px) {
+            main {
+                flex-direction: column;
+               
+            }
 
+            .controllers {
+                flex-direction: row;
+           
+            }
 
-.form-control {
-    margin-left: 80px;
-    height: 50px;
-    margin-bottom: 50px;
-    width: 50vw;
-    max-height: 1350px;
-    border-radius: 0px;
-    border: none;
-    background: FFFFFF;
-}
-
-
-
-.form-control1 {
-    margin-top: 80px;
-    margin-left: 80px;
-    width: 50vw;
-    border: none;
-    height: 50vh;
-    background: FFFFFF;
-}
-
-button.btn.btn-primary.btn-lg {
-    margin-left: 87%;
-    margin-top: 10px;
-    width: 9vw;
-
-
-    margin-top: 18px;
-
-
-
-}
-
-
-.card img {
-    height: 80px;
-    display: flex;
-    align-items: center;
-
-}
-
-.card {
-    border: none;
-}
-
-.btn {
-    background: #708E67;
-    font-family: 'Arsenal', sans-serif;
-    letter-spacing: 8px;
-    display: flex;
-    align-items: center;
-    display: inline;
-}
-
-
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: #0bd711;
-    border-color: #ff4444;
-}
-
-.btn-primary {
-    border-color: #708973;
-    border-color: #f70e0e;
-}
-.btn-secundary{
-    background: #f516a3;
-}
-
-
-
-/* ------------------------------------------------------------------------------Media Query------------------------------------------------------------------------------------------------*/
-@media(max-width : 1225px) {
-
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    button {
-        background: forestgreen;
-
-    }
-
-    .card .form-control1 {
-        margin-left: 10px;
-        width: 50vw;
-        border: none;
-        height: 50vh;
-        background: rgb(126, 213, 38);
-
-    }
-
-    .card .form-control {
-        margin-bottom: 15px;
-        margin-left: 10px;
-        width: 50vw;
-        border-radius: 0px;
-        border: none;
-        background: fuchsia;
-    }
-
-    .card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 9%;
-        border: none;
-    }
-
-    .btn {
-
-        margin-right: 60px;
-        background: magenta;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        font-family: 'Arsenal', sans-serif;
-
-    }
-
-
-
-}
+            .container{
+                
+                width: 300px;
+                padding-bottom: 240px;
+            }
+            a img{
+                width: 60px;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1px 3px;
+            }
+        
+     
+        }
