@@ -2,6 +2,29 @@ function user() {
     window.location.href = "../Login/index.html";
 }
 
+function informatica(){
+    window.location.href = "../ViewOcorrenciaTI/index2.html";
+}
+
+function manutencao(){
+    window.location.href = "../ViewOcorrenciaManutencao";
+}
+
+function rh(){
+    window.location.href = "../ViewOcorrenciaRecursosHumanos/index.html"
+}
+
+function marketing(){
+    window.location.href = "../ViewOcorrenciaMarketing/index.html"
+}
+
+function logistica(){
+    window.location.href = "../ViewOcorrenciaLogistica/index.html"
+}
+
+function financeiro(){
+    window.location.href = "../ViewOcorrenciaFinanceiro/index.html"
+}
 let modeChange = document.querySelector('.modeChange');
 let containerNav= document.querySelector('.container-fluid');
 let card = document.querySelector('.card');
