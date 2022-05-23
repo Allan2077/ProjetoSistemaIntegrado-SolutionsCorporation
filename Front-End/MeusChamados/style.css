@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Arsenal', sans-serif;
+
+}
+
+header {
+    width: 90%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a img:first-child {
+    width: 70px;
+
+}
+
+header img:last-child {
+    width: 300px;
+}
+
+main {
+
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Arsenal', sans-serif;
+    
+}
+
+
+.container {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #F5F5F5;
+    margin-bottom: 50px;
+
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 6vh;
+    background: #E2E2E2;
+    border-radius: 8px;
+}
+
+h2 {
+    width: 26%;
+    font-family: 'Arsenal', sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+
+}
+
+button {
+    display: flex;
+    align-items: center;
+
+    margin: 3%;
+    border: none;
+    font-size: 1vw;
+    padding: 10px;
+    cursor: pointer;
+    height: 4vh;
+    color: white;
+    background: #1FDA6A;
+    font-family: 'Arsenal', sans-serif;
+    letter-spacing: 5px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #fbff1c8c;
+
+}
+
+@media(max-width : 1000px){
+
+    
+    h2 {
+        width: 80%;
+        font-family: 'Arsenal', sans-serif;
+        letter-spacing: 1px;
+        display: flex;
+        align-items:flex-end;
+        justify-content: center;
+        font-size: 1.9vw;
+    
+    }
+    button {
+        display: flex;
+        align-items: center;
+    
+        margin: 3%;
+        border: none;
+        font-size: 2vw;
+        padding: 10px;
+        cursor: pointer;
+        height: 4vh;
+        color: white;
+        background: #1FDA6A;
+        font-family: 'Arsenal', sans-serif;
+        letter-spacing: 5px;
+        border-radius: 4px;
+    }
+}

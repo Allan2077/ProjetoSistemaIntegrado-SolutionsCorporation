@@ -1,3 +1,3 @@
 function back(){
-    window.location.href = "../Home/index.html"
+    window.location.href = "../MeusChamados/index.html"
 }

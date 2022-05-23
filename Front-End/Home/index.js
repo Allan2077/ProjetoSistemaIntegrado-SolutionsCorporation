@@ -25,6 +25,10 @@ function logistica(){
 function financeiro(){
     window.location.href = "../ViewOcorrenciaFinanceiro/index.html"
 }
+
+function meusChamados(){
+    window.location.href = "../MeusChamados/index.html"
+}
 let modeChange = document.querySelector('.modeChange');
 let containerNav= document.querySelector('.container-fluid');
 let card = document.querySelector('.card');

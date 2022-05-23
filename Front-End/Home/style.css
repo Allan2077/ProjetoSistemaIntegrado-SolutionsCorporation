@@ -26,7 +26,7 @@ body {
 .navbar .container-fluid {
   display: flex;
   align-items: center;
-  width: 70vw;
+  width: 90vw;
   justify-content: space-between;
 }
 
@@ -48,10 +48,11 @@ img {
   position: relative;
   align-items: center;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 /* Manipulação dentro do alert*/
-.alert>div {
+.alert > div {
   width: 22px;
   height: 22px;
   position: absolute;
@@ -72,10 +73,10 @@ img {
   overflow: auto;
   border-radius: 15px;
   display: flex;
-  width: 70vw;
-  height: 70vh;
+  width: 90vw;
+  height: 80vh;
   background: #fff;
-  box-shadow: rgba(38, 48, 38, 0.986) 0px 54px 55px, rgba(60, 77, 56, 0.966) 0px -12px 30px, rgb(129, 25, 143) 0px 4px 6px, rgba(3, 56, 5, 0.986) 0px 12px 13px, rgb(101, 134, 101) 0px -3px 5px;
+  box-shadow: rgba(26, 37, 26, 0.986) 0px 54px 55px, rgba(82, 105, 83, 0.966) 0px -12px 30px, rgba(236, 140, 248, 0.356) 0px 4px 6px, rgba(12, 255, 20, 0.986) 0px 12px 13px, rgb(56, 133, 56) 0px -3px 5px;
 }
 
 /* Manipulação dentro da div 'card' */
@@ -122,17 +123,9 @@ h2 {
   font-family: 'Arsenal', sans-serif;
 }
 
-.darkMode {
-  background: #181515 !important;
-  color: var(--branco) !important;
-}
 
-.darkModeCard {
-  color: #fff;
-  background: #1b1b1b;
-  box-shadow: rgb(58, 88, 48) 0px 54px 55px, rgb(73, 211, 31) 0px -12px 30px, rgb(255, 0, 0) 0px 4px 6px, rgba(73, 211, 31) 0px 12px 13px, rgb(73, 211, 31) 0px -3px 5px !important;
-}
 
+/* Aqui para baixo é propriedade do toggle*/
 input[type=checkbox] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -178,3 +171,15 @@ input[type=checkbox]:focus {
 .toggle:checked:after {
   transform: translatex(20px);
 }
+
+/* Dark Mode Ativo*/
+  .darkMode {
+    background: #181515 !important;
+    color: var(--branco) !important;
+  }
+  
+  .darkModeCard {
+    color: rgb(255, 255, 255);
+    background: #005a0015;
+    box-shadow: rgba(76, 45, 117, 0.829) 0px 54px 55px, rgb(24, 2, 219) 0px -12px 30px, rgb(134, 28, 196) 0px 4px 6px, rgb(61, 60, 59) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px !important;
+  }
