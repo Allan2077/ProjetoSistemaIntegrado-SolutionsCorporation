@@ -20,12 +20,10 @@ header {
 }
 
 header a img:first-child {
-    width: 70px;
+    width: 450px;
+    height:130px;
 }
 
-header img:last-child {
-    width: 300px;
-}
 
 main {
     margin: 20px;

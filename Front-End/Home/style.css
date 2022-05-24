@@ -11,12 +11,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: white;
 }
 
 /* logo */
 .logo {
-  width: 12vw;
-  min-width: 320px;
+  width: 450px;
+  height:  130px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +29,7 @@ body {
   align-items: center;
   width: 90vw;
   justify-content: space-between;
+  background: white;
 }
 
 /* Manipulação dos icones do nav no cabeçalho junto com a logo*/
@@ -69,7 +71,7 @@ img {
 
 /* card quadrado principal */
 .card {
-  margin-top: 5vh;
+  margin-top: 2vh;
   overflow: auto;
   border-radius: 15px;
   display: flex;

@@ -29,6 +29,7 @@ h2 {
 
 
 
+
 /* STRUCTURE */
 
 .wrapper {
@@ -40,6 +41,10 @@ h2 {
   min-height: 100%;
   padding: 20px;
 
+}
+.logo{
+
+  height:100%;
 }
 
 #formContent {
