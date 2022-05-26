@@ -1,0 +1,53 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+
+    header {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header a img:first-child {
+        width: 450px;
+        height: 130px;
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Arsenal', sans-serif;
+    }
+
+    
+    main, .container{
+        width: 90%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 80vh;
+        background: #f3ebeb;
+
+    
+    }
+
+    .form-control{
+        width: 80vw;
+        background: darkmagenta;
+        justify-content: space-around;
+        
+    }
+  
+
+
