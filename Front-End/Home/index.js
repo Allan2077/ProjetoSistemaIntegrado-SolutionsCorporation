@@ -1,33 +1,33 @@
 function user() {
-    window.location.href = "../Login/index.html";
+    window.location.href = "../Login/login.html";
 }
 
 function informatica(){
-    window.location.href = "../ViewOcorrenciaTI/index2.html";
+    window.location.href = "../ViewOcorrenciaTI/view_ocorrencia_ti.html";
 }
 
 function manutencao(){
-    window.location.href = "../ViewOcorrenciaManutencao";
+    window.location.href = "../ViewOcorrenciaManutencao/view_ocorrencia_manutencao.html";
 }
 
 function rh(){
-    window.location.href = "../ViewOcorrenciaRecursosHumanos/index.html"
+    window.location.href = "../ViewOcorrenciaRecursosHumanos/view_ocorrencia_rh.html"
 }
 
 function marketing(){
-    window.location.href = "../ViewOcorrenciaMarketing/index.html"
+    window.location.href = "../ViewOcorrenciaMarketing/view_ocorrencia_marketing.html"
 }
 
 function logistica(){
-    window.location.href = "../ViewOcorrenciaLogistica/index.html"
+    window.location.href = "../ViewOcorrenciaLogistica/view_ocorrencia_logistica.html"
 }
 
 function financeiro(){
-    window.location.href = "../ViewOcorrenciaFinanceiro/index.html"
+    window.location.href = "../ViewOcorrenciaFinanceiro/view_ocorrencia_financeiro.html"
 }
 
 function meusChamados(){
-    window.location.href = "../MeusChamados/index.html"
+    window.location.href = "../MeusChamados/meus_chamados.html"
 }
 let modeChange = document.querySelector('.modeChange');
 let containerNav= document.querySelector('.container-fluid');
