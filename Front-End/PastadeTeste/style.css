@@ -1,78 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
-*{
-    margin:0;
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Arsenal', sans-serif;
 }
 
 header {
     width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 header a img:first-child {
+    width: 10%;
     width: 450px;
-    height: 130px;
+    height: 130px
 }
 
-.container {
-   
-    width: 90vw;
-    height: 80vh;
+body {
+
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0
+}
+
+main {
     background: #f5f5f5;
-    margin-bottom: 50px;
-
-}
-
-table, td, th{
-    background: rgb(211, 212, 212);
-    width: 18vw;
-    height: 4vh;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
-    font-family: 'Arsenal', sans-serif;
-    letter-spacing: 1px;
-    font-size: 2vh;
-  font-weight: bold;
-
+    justify-content: center;
+    width: 90%;
+    height: 80vh
 }
 
-tr, td {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: px;
+}
+
+.col {
+    background: rgb(197, 196, 196);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 80vw;
+    height: 5vh;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 button {
     display: flex;
     align-items: center;
+
+    margin: 3%;
     border: none;
-    font-size: 2vh;
+    font-size: 1vw;
     padding: 10px;
     cursor: pointer;
-    height: 3vh;
+    height: 4vh;
     color: white;
     background: #1FDA6A;
     font-family: 'Arsenal', sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     border-radius: 4px;
 }
 
