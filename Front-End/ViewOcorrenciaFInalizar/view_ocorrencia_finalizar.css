@@ -30,14 +30,15 @@ header a img:first-child {
 
 
 main {
-    margin: 20px 0px 1000px;
-    width: 89%;
+  
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     font-family: 'Arsenal', sans-serif;
     background: #f5f5f5;
+    margin-bottom: 80px;
 }
 
 .container {
@@ -54,12 +55,27 @@ h2 {
     padding: 0;
     font-size: 35px;
     font-weight: 400;
-    margin-left: 20px;
+    margin-left: 20px; 
+   
     
 }
 
-p {
+p{
     margin-left: 20px;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
+    
+}
+
+.caixaTexto {
+    position: relative;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
+    height: 10vh;
+    font-weight: 400;
+    width:100%;
+    outline:none; 
+    border: 1px solid rgb(209, 206, 206);
 }
 
 .title {

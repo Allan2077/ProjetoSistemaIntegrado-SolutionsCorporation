@@ -59,10 +59,9 @@ main {
 button {
     display: flex;
     align-items: center;
-
     margin: 3%;
     border: none;
-    font-size: 1vw;
+    font-size: 100%;
     padding: 10px;
     cursor: pointer;
     height: 4vh;

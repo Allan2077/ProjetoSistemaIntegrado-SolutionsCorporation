@@ -27,7 +27,7 @@ function financeiro(){
 }
 
 function meusChamados(){
-    window.location.href = "../MeusChamados/meus_chamados.html"
+    window.location.href = "../Meus_Chamados/meus_chamados.html"
 }
 let modeChange = document.querySelector('.modeChange');
 let containerNav= document.querySelector('.container-fluid');

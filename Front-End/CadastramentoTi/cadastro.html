@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="cadastro.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="cadastro.css">
     <title>Cadastramento Ti</title>
 </head>
 
@@ -16,36 +17,38 @@
     <header>
         <img src="../Assets/LogoSolution.png">
     </header>
+
 <main>
     <div class="container">
+        <div class="form-row">
 
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Usuário</label>
-                <input type="email" class="form-control" id="usuario" aria-describedby="emailHelp">
+            <div class="form-group col-md-6">
+                <label for="inputUsuario" style="margin-top: 10px;">Usuario</label>
+                <input type="text" class="form-control" id="inputUsuario" placeholder="Digite seu usuario...">
+              </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputNome" style="margin-top: 10px;">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome...">
+              </div>
+      
+            <div class="form-group col-md-6">
+              <label for="inputSetor" style="margin-top: 10px;">Setor</label>
+              <input type="text" class="form-control" id="inputSetor" placeholder="Digite seu setor...">
             </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nome</label>
-                <input type="email" class="form-control" id="nome" aria-describedby="emailHelp">
+      
+            <div class="form-group col-md-6">
+              <label for="inputPassword">Matricula</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Digite sua matricula...">
             </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Setor</label>
-                <input type="email" class="form-control" id="setor" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Matrícula</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-          
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-</main>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+
+            <button type="button" class="button-proprio">Enviar</button>
+            
+            
+        </div>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="cadastro.js"></script>
 </body>
 
 </html>
