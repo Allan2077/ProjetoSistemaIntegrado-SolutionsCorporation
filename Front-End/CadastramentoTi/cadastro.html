@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="cadastro.css">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    
-    <link rel="stylesheet" href="cadastro.css">
-    <title>Cadastramento Ti</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+
+  <link rel="stylesheet" href="cadastro.css">
+  <title>Cadastramento Ti</title>
 </head>
 
 <body>
-    <header>
-        <img src="../Assets/LogoSolution.png">
-    </header>
+  <header>
+    <img src="../Assets/LogoSolution.png">
+  </header>
 
-<main>
-    <div class="container">
-        <div class="form-row">
+  <main>
+    <form class="p-3">
 
-            <div class="form-group col-md-6">
-                <label for="inputUsuario" style="margin-top: 10px;">Usuario</label>
-                <input type="text" class="form-control" id="inputUsuario" placeholder="Digite seu usuario...">
-              </div>
 
-            <div class="form-group col-md-6">
-                <label for="inputNome" style="margin-top: 10px;">Nome</label>
-                <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome...">
-              </div>
-      
-            <div class="form-group col-md-6">
-              <label for="inputSetor" style="margin-top: 10px;">Setor</label>
-              <input type="text" class="form-control" id="inputSetor" placeholder="Digite seu setor...">
-            </div>
-      
-            <div class="form-group col-md-6">
-              <label for="inputPassword">Matricula</label>
-              <input type="password" class="form-control" id="inputPassword" placeholder="Digite sua matricula...">
-            </div>
+      <div class="my-5">
+        <label class="form-label">Usuario:</label>
+        <input class="form-control" type="text" name="f_ususario"/>
+      </div>
 
-            <button type="button" class="button-proprio">Enviar</button>
-            
-            
-        </div>
-   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="cadastro.js"></script>
+      <div class="my-5">
+        <label class="form-label">Nome:</label>
+        <input class="form-control" type="text" name="f_nome" />
+      </div>
+
+
+      <div class="my-5">
+        <label class="form-label">Setor:</label>
+        <input class="form-control" type="text" name="f_setor" />
+      </div>
+
+      <div class="my-5">
+        <label class="form-label">Matricula:</label>
+        <input class="form-control" type="text" name="f_matricula" />
+      </div>
+
+      <div class="my-5">
+        <button class="button-proprio">Enviar</button>
+      </div>
+
+    </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="cadastro.js"></script>
 </body>
 
 </html>

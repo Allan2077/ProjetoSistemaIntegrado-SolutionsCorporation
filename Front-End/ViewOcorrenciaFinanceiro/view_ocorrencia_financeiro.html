@@ -11,32 +11,36 @@
 </head>
 
 <body>
+    
+    <!--------------------------Cabeçalho------------------------------------------>
     <header>
         <a onclick="back()" style="cursor: pointer;">
             <img src="../Assets/LogoSolution.png" class="back">
         </a>
-
-
-
     </header>
 
-    <main>
-        <div class="controllers">
+    <!--------------------------Container quadrado geral--------------------------->
+    <div class="container">
+
+        <!--------------------------Imagens laterais----------------------------------->
+        <aside>
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/compras.svg">
+                <img src="../Assets/compras.svg" title="Compras">
             </a>
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/vendas.svg">
+                <img src="../Assets/vendas.svg" title="Vendas">
             </a>
 
-         
+
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/more.svg">
+                <img src="../Assets/more.svg" title="Outros">
             </a>
-        </div>
-        <div class="container">
+        </aside>
+
+        <!--------------------------Parte principal----------------------------------->
+        <main>
 
             <div class="desc">
                 <h2>Férias</h2>
@@ -59,11 +63,13 @@
                 consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus
                 similiquesint delectus dolorum.
             </p>
-        </div>
+        </main>
+
+        <!--------------------------Botão lateral----------------------------------->
         <div class="button-search">
             <button type="button" style="font-size: 20px">Enviar</button>
         </div>
-    </main>
+    </div>
     <script src="view_ocorrencia_financeiro.js"></script>
 </body>
 

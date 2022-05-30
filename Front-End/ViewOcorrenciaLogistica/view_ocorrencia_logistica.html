@@ -11,33 +11,34 @@
 </head>
 
 <body>
+    
+    <!--------------------------Cabeçalho------------------------------------------>
     <header>
         <a onclick="back()" style="cursor: pointer;">
             <img src="../Assets/LogoSolution.png" class="back">
         </a>
-
-
     </header>
 
-    <main>
-        <div class="controllers">
+    <!--------------------------Container quadrado geral--------------------------->
+    <div class="container">
+
+        <!--------------------------Imagens laterais----------------------------------->
+        <aside>
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/notaFiscal.svg">
+                <img src="../Assets/notaFiscal.svg" title="Nota fiscal">
             </a>
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/AquisicaoMaterial.svg">
+                <img src="../Assets/AquisicaoMaterial.svg" title="Aquisição de materiais">
             </a>
-
-        
-
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/more.svg">
+                <img src="../Assets/more.svg" title="Outros">
             </a>
-        </div>
-        <div class="container">
+        </aside>
 
+        <!--------------------------Parte principal----------------------------------->
+        <main>
             <div class="desc">
                 <h2>Férias</h2>
             </div>
@@ -59,12 +60,16 @@
                 consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus
                 similiquesint delectus dolorum.
             </p>
-        </div>
+        </main>
+
+        <!--------------------------Botão lateral----------------------------------->
         <div class="button-search">
             <button type="button" style="font-size: 20px">Enviar</button>
         </div>
-    </main>
-    <script src="view_ocorrencia_logistica.js"></script>
+
+
+        <script src="view_ocorrencia_logistica.js"></script>
+    </div>
 </body>
 
 </html>

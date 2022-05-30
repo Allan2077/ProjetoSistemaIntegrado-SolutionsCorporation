@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<!--------------------------Cabeçalho------------------------------------------>
     <header>
         <a onclick="back()" style="cursor: pointer;">
             <img src="../Assets/LogoSolution.png"  class="back">
@@ -19,31 +20,35 @@
      
 
     </header>
+<!--------------------------Container quadrado geral--------------------------->
+    <div class="container">
 
-    <main>
-        <div class="controllers">
+<!--------------------------Imagens laterais----------------------------------->
+        <aside>
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/FolhaPagamento.svg">
+                <img src="../Assets/FolhaPagamento.svg" title="Folha de pagamento">
             </a>
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/ferias.svg">
+                <img src="../Assets/ferias.svg" title="Férias">
             </a>
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/FaltasFuncionario.svg">
+                <img src="../Assets/FaltasFuncionario.svg" title="Faltas dos funcionários">
             </a>
 
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/AddUser.svg">
+                <img src="../Assets/AddUser.svg" title="Adicionar funcionário">
             </a>
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/more.svg">
+                <img src="../Assets/more.svg" title="Outros">
             </a>
-        </div>
-        <div class="container">
+        </aside>
+
+<!--------------------------Parte principal----------------------------------->
+        <main>
 
             <div class="desc">
                 <h2>Férias</h2>
@@ -66,11 +71,13 @@
                 consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus
                 similiquesint delectus dolorum.
             </p>
-        </div>
+        </main>
+        
+<!--------------------------Botão lateral----------------------------------->
         <div class="button-search">
             <button type="button" style="font-size: 20px">Enviar</button>
         </div>
-    </main>
+    </div>
     <script src="view_ocorrencia_rh.js"></script>
 </body>
 

@@ -25,7 +25,7 @@ header a img:first-child {
 }
 
 
-main {
+.container {
     margin: 20px;
     padding: 0;
     height: 85%;
@@ -38,7 +38,7 @@ main {
     background: #f5f5f5;
 }
 
-.controllers {
+aside {
     height: 95%;
     display: flex;
 
@@ -53,7 +53,7 @@ a img {
     height: 15vh;
 }
 
-.container {
+main {
     height: 90%;
     width: 70%;
     display: flex;
@@ -104,7 +104,7 @@ p{
     justify-content: center;
 }
 
-main button {
+ button {
     border: none;
     font-size: 36px;
     width: 130px;
@@ -117,17 +117,17 @@ main button {
 }
 
 @media (max-width : 400px) {
-    main {
+    .container {
         flex-direction: column;
 
     }
 
-    .controllers {
+    aside {
         flex-direction: row;
 
     }
 
-    .container {
+    main {
 
         width: 300px;
         padding-bottom: 20px;

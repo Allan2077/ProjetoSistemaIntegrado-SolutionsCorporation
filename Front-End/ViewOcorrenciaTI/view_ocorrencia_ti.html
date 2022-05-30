@@ -11,48 +11,49 @@
 </head>
 
 <body>
+
+    <!--------------------------Cabeçalho------------------------------------------>
     <header>
         <a onclick="back()" style="cursor: pointer;">
             <img src="../Assets/LogoSolution.png" class="back">
         </a>
-
- 
-
     </header>
 
-    <main>
-        <div class="controllers">
+    <!--------------------------Container quadrado geral--------------------------->
+    <div class="container">
+
+        <!--------------------------Imagens laterais----------------------------------->
+        <aside>
             <a onclick="impressora()" style="cursor: pointer;">
-                <img src="../Assets/Impressora.svg">
+                <img src="../Assets/Impressora.svg" title="Impressora">
             </a>
 
             <a onclick="computador()" style="cursor: pointer;">
-                <img src="../Assets/Computador.svg">
+                <img src="../Assets/Computador.svg" title="Computador">
             </a>
 
             <a onclick="roteador()" style="cursor: pointer;">
-                <img src="../Assets/roteador.svg">
+                <img src="../Assets/roteador.svg" title="Roteador">
             </a>
 
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/AddUser.svg">
+                <img src="../Assets/AddUser.svg" title="Adicionar fúncionario">
             </a>
 
             <a onclick="others()" style="cursor: pointer;">
-                <img src="../Assets/more.svg">
+                <img src="../Assets/more.svg" title="Outros">
             </a>
-        </div>
-        <div class="container">
+        </aside>
 
+
+        <main>
             <div class="desc">
                 <h2>Impressora</h2>
             </div>
-
             <div class="title">
                 <h2>Descrição</h2>
             </div>
-
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
                 deleniti doloremque vero maxime nam reprehenderit aut molestias
@@ -63,12 +64,14 @@
                 consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus
                 similiquesint delectus dolorum.
             </p>
+        </main>
 
-        </div>
+        <!--------------------------Parte principal----------------------------------->
         <div class="button-search">
             <button type="button" style="font-size: 20px">Enviar</button>
         </div>
-    </main>
+
+    </div>
     <script src="view_ocorrencia_ti.js"></script>
 </body>
 

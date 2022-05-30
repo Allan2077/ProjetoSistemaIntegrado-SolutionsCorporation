@@ -11,33 +11,36 @@
 </head>
 
 <body>
+
+<!--------------------------Cabeçalho------------------------------------------>
     <header>
         <a onclick="back()" style="cursor: pointer;">
             <img src="../Assets/LogoSolution.png" class="back">
         </a>
-
-
-
     </header>
 
-    <main>
-        <div class="controllers">
+<!--------------------------Container quadrado geral--------------------------->
+    <div class="container">
+
+<!--------------------------Imagens laterais----------------------------------->
+        <aside>
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/manutencao.svg">
+                <img src="../Assets/manutencao.svg" title="Manutenção">
             </a>
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/trocaEquipamento.svg">
+                <img src="../Assets/trocaEquipamento.svg" title="Troca de equipamentos">
             </a>
 
          
 
             <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/more.svg">
+                <img src="../Assets/more.svg" title="Outros">
             </a>
-        </div>
-        <div class="container">
+        </aside>
 
+<!--------------------------Parte principal----------------------------------->
+        <main>
             <div class="desc">
                 <h2>Férias</h2>
             </div>
@@ -59,11 +62,13 @@
                 consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus
                 similiquesint delectus dolorum.
             </p>
-        </div>
+        </main>
+        
+<!--------------------------Botão lateral----------------------------------->
         <div class="button-search">
             <button type="button" style="font-size: 20px">Enviar</button>
         </div>
-    </main>
+    </div>
     <script src="view_ocorrencia_manutencao.js"></script>
 </body>
 
