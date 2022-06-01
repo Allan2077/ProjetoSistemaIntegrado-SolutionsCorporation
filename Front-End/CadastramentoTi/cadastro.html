@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="cadastro.css">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
 
-  <link rel="stylesheet" href="cadastro.css">
-  <title>Cadastramento Ti</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastramento Ti</title>
 </head>
 
 <body>
-  <header>
-    <img src="../Assets/LogoSolution.png">
-  </header>
+    <header>
+        <img src="../Assets/LogoSolution.png">
+    </header>
 
-  <main>
-    <form class="p-3">
-
-
-      <div class="my-5">
-        <label class="form-label">Usuario:</label>
-        <input class="form-control" type="text" name="f_ususario"/>
-      </div>
-
-      <div class="my-5">
-        <label class="form-label">Nome:</label>
-        <input class="form-control" type="text" name="f_nome" />
-      </div>
+    <main>
+        <div class="p-3" action="#" method="post">
 
 
-      <div class="my-5">
-        <label class="form-label">Setor:</label>
-        <input class="form-control" type="text" name="f_setor" />
-      </div>
+            <div class="my-5">
+                <label class="form-label">Nome:</label>
+                <input class="form-control" type="text" name="f_ususario" id="nome" />
+            </div>
 
-      <div class="my-5">
-        <label class="form-label">Matricula:</label>
-        <input class="form-control" type="text" name="f_matricula" />
-      </div>
+            <div class="my-5">
+                <label class="form-label">Sobre Nome:</label>
+                <input class="form-control" type="text" name="f_nome" id="sobreNome" />
+            </div>
 
-      <div class="my-5">
-        <button class="button-proprio">Enviar</button>
-      </div>
 
-    </form>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script src="cadastro.js"></script>
+            <div class="my-5">
+                <label class="form-label">Setor:</label>
+                <input class="form-control" type="text" name="f_setor" id="setor" />
+            </div>
+
+            <div class="my-5">
+                <label class="form-label">Matricula:</label>
+                <input class="form-control" type="text" name="f_matricula" id="matricula" />
+            </div>
+
+            <div class="my-5">
+                <button type='submit' class="btnCadastro" value="Acessar">Enviar</button>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <script src="../global/md5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="cadastro.js"></script>
 </body>
 
 </html>

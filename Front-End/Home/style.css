@@ -1,187 +1,216 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
 }
+
 
 /* logo */
+
 .logo {
-  width: 450px;
-  height:  130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 450px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /*Essa classe mantém meu header responsivo de acordo com o card*/
+
 .navbar .container-fluid {
-  display: flex;
-  align-items: center;
-  width: 90vw;
-  justify-content: space-between;
-  background: white;
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    justify-content: space-between;
+    background: white;
 }
+
 
 /* Manipulação dos icones do nav no cabeçalho junto com a logo*/
+
 img {
-  margin-left: 25px;
-  width: 30px;
+    margin-left: 25px;
+    width: 30px;
 }
+
+h3 {
+    color: rgb(88, 87, 87);
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 20px
+}
+
 
 /* Manipulação dos icones do nav no cabeçalho */
+
 .img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
 /* Manipulação dentro do alert*/
+
 .alert {
-  position: relative;
-  align-items: center;
-  margin-top: 15px;
-  cursor: pointer;
+    position: relative;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
 }
 
+
 /* Manipulação dentro do alert*/
-.alert > div {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  background: red;
-  border-radius: 100%;
-  color: white;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  font-size: 14px
+
+.alert>div {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    background: red;
+    border-radius: 100%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px
 }
+
 
 /* card quadrado principal */
+
 .card {
-  margin-top: 2vh;
-  overflow: auto;
-  border-radius: 15px;
-  display: flex;
-  width: 90vw;
-  height: 70vh;
-  background: #fff;
-  box-shadow: rgba(26, 37, 26, 0.986) 0px 54px 55px, rgba(82, 105, 83, 0.966) 0px -12px 30px, rgba(236, 140, 248, 0.356) 0px 4px 6px, rgba(12, 255, 20, 0.986) 0px 12px 13px, rgb(56, 133, 56) 0px -3px 5px;
+    margin-top: 2vh;
+    overflow: auto;
+    border-radius: 15px;
+    display: flex;
+    width: 90vw;
+    height: 70vh;
+    background: #fff;
+    box-shadow: rgba(26, 37, 26, 0.986) 0px 54px 55px, rgba(82, 105, 83, 0.966) 0px -12px 30px, rgba(236, 140, 248, 0.356) 0px 4px 6px, rgba(12, 255, 20, 0.986) 0px 12px 13px, rgb(56, 133, 56) 0px -3px 5px;
 }
 
-/* Manipulação dentro da div 'card' */
-.row {
 
-  width: 80%;
-  height: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Manipulação dentro da div 'card' */
+
+.row {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .col {
-  text-align: center
+    text-align: center
 }
+
 
 /* Manipulação dos cards */
+
 .col .card-img {
-  display: flex;
-  justify-content: center;
-  height: 20%;
-  border-radius: 20px;
-  cursor: pointer;
-  width: 90%;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
 }
+
 
 /* Manipulação dentro da div 'card' */
+
 .card .container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -60px;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    height: 100%;
 }
+
 
 /* Título da escrita acima dos card */
-h2 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-  /* Nunca esquecer da font-family importada no google-font e declarada aqui no topo*/
-  font-family: 'Arsenal', sans-serif;
-}
 
+h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    /* Nunca esquecer da font-family importada no google-font e declarada aqui no topo*/
+    font-family: 'Arsenal', sans-serif;
+}
 
 
 /* Aqui para baixo é propriedade do toggle*/
+
 input[type=checkbox] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 
 input[type=checkbox]:focus {
-  outline: 0;
+    outline: 0;
 }
 
 .toggle {
-  height: 32px;
-  width: 52px;
-  border-radius: 16px;
-  display: flex;
-  position: relative;
-  margin: 0;
-  border: 2px solid #505c33;
-  background: linear-gradient(180deg, #cccdcf 0%, #496349 100%);
-  transition: all 0.2s ease;
-  margin-left: 20px;
+    height: 32px;
+    width: 52px;
+    border-radius: 16px;
+    display: flex;
+    position: relative;
+    margin: 0;
+    border: 2px solid #505c33;
+    background: linear-gradient(180deg, #cccdcf 0%, #496349 100%);
+    transition: all 0.2s ease;
+    margin-left: 20px;
 }
 
 .toggle:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: rgb(217, 245, 224);
-  box-shadow: 0 1px 2px rgb(235, 0, 0);
-  transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgb(217, 245, 224);
+    box-shadow: 0 1px 2px rgb(235, 0, 0);
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
 }
 
 .toggle:checked {
-  border-color: #94df9b;
+    border-color: #94df9b;
 }
 
 .toggle:checked:after {
-  transform: translatex(20px);
+    transform: translatex(20px);
 }
 
+
 /* Dark Mode Ativo*/
-  .darkMode {
+
+.darkMode {
     background: #181515 !important;
     color: var(--branco) !important;
-  }
-  
-  .darkModeCard {
+}
+
+.darkModeCard {
     color: rgb(255, 255, 255);
     background: #005a0015;
     box-shadow: rgba(76, 45, 117, 0.829) 0px 54px 55px, rgb(24, 2, 219) 0px -12px 30px, rgb(134, 28, 196) 0px 4px 6px, rgb(61, 60, 59) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px !important;
-  }
+}

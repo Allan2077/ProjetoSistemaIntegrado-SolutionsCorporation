@@ -2,103 +2,108 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
 </head>
 
 <body>
 
-  <header>
-    <!-- Essas classes mantem a responsividade dos icones ao quebrar a página a baixo da logo -->
-    <nav class="navbar navbar-light bg-light">
-      <!-- Essa classe mantem meu header responsivo de acordo com o card -->
-      <div class="container-fluid">
+    <header>
+        <!-- Essas classes mantem a responsividade dos icones ao quebrar a página a baixo da logo -->
+        <nav class="navbar navbar-light bg-light">
+            <!-- Essa classe mantem meu header responsivo de acordo com o card -->
+            <div class="container-fluid">
 
-        <!-- Mantenho a logo fora da classe 'img' para não juntar tudo com as 'imgs' -->
-        <img src="../Assets/LogoSolution.png" class="logo" id="idlogo">
+                <!-- Mantenho a logo fora da classe 'img' para não juntar tudo com as 'imgs' -->
+                <img src="../Assets/LogoSolution.png" class="logo" id="idlogo">
 
-        <div class="img">
-          <a onclick="meusChamados()">
-          <div title="Meus Chamados" class="alert" >
-            <img src="../Assets/carta.svg">
-            <div clas="notification">5</div>
-          </div>
-        </a>
 
-          <a onclick="user()" style="cursor: pointer;">
-            <img title="Login" src="../Assets/user1.svg">
-          </a>
+                <div class="img">
 
-          <input title="Modo Noturno" type="checkbox" class="toggle modeChange" checked>
+
+                    <a onclick="meusChamados()">
+                        <div title="Meus Chamados" class="alert">
+                            <img src="../Assets/carta.svg">
+                            <div clas="notification">5</div>
+                        </div>
+                    </a>
+
+                    <a onclick="user()" style="cursor: pointer;">
+                        <img title="Login" src="../Assets/user1.svg">
+
+                    </a>
+
+
+                    <h3 id="nome-logado" class="helloUser">
+                    </h3>
+
+                    <input title="Modo Noturno" type="checkbox" class="toggle modeChange" checked>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="card">
+            <div class="container-fluid">
+                <div class="row  row-cols-1 row-cols-sm-1 row-cols-lg-3 row-cols-md-2 row-cols-xl-3">
+
+                    <a onclick="informatica()">
+                        <div class="col">
+                            <h2 class="titulo">Informática</h2>
+                            <img title="Informática" src="../Assets/programacion-M360.jpg" class="card-img" alt="Informática">
+                        </div>
+                    </a>
+
+                    <a onclick="manutencao()">
+                        <div class="col">
+                            <h2 class="titulo">Manutenção</h2>
+                            <img title="Manutenção" src="../Assets/Manutencao-Corretiva.jpg" class="card-img" alt="Manutenção">
+                        </div>
+                    </a>
+
+                    <a onclick="rh()">
+                        <div class="col">
+                            <h2 class="titulo">Recursos Humanos</h2>
+                            <img title="Recursos Humanos" src="../Assets/rh-em-nuvem-1024x585.png" class="card-img" alt="Recursos Humanos">
+                        </div>
+                    </a>
+
+                    <a onclick="marketing()">
+                        <div class="col">
+                            <h2 class="titulo">Marketing</h2>
+                            <img title="Marketing" src="../Assets/ideias.jpg" class="card-img" alt="Marketing">
+                        </div>
+                    </a>
+
+                    <a onclick="logistica()">
+                        <div class="col">
+                            <h2 class="titulo">Logística</h2>
+                            <img title="Logística" src="../Assets/checklists-na-logística-1200x640.png" class="card-img" alt="Logística">
+                        </div>
+                    </a>
+
+                    <a onclick="financeiro()">
+                        <div class="col">
+                            <h2>Financeiro</h2>
+                            <img title="Financeiro" src="../Assets/planejamento-financeiro.jpg" class="card-img" alt="Financeiro">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </main>
 
-
-  <main>
-    <div class="card">
-      <div class="container-fluid">
-        <div class="row  row-cols-1 row-cols-sm-1 row-cols-lg-3 row-cols-md-2 row-cols-xl-3">
-
-          <a onclick="informatica()">
-            <div class="col">
-              <h2 class="titulo">Informática</h2>
-              <img  title="Informática" src="../Assets/programacion-M360.jpg" class="card-img" alt="Informática">
-            </div>
-          </a>
-
-          <a onclick="manutencao()">
-            <div class="col">
-              <h2  class="titulo">Manutenção</h2>
-              <img title="Manutenção" src="../Assets/Manutencao-Corretiva.jpg" class="card-img" alt="Manutenção">
-            </div>
-          </a>
-
-          <a onclick="rh()">
-            <div class="col">
-              <h2 class="titulo">Recursos Humanos</h2>
-              <img  title="Recursos Humanos" src="../Assets/rh-em-nuvem-1024x585.png" class="card-img" alt="Recursos Humanos">
-            </div>
-          </a>
-
-          <a onclick="marketing()">
-          <div class="col">
-              <h2 class="titulo">Marketing</h2>
-              <img  title="Marketing" src="../Assets/ideias.jpg" class="card-img" alt="Marketing">
-            </div>
-          </a>
-
-          <a onclick="logistica()">
-            <div class="col">
-              <h2  class="titulo">Logística</h2>
-              <img title="Logística" src="../Assets/checklists-na-logística-1200x640.png" class="card-img" alt="Logística">
-            </div>
-          </a>
-
-          <a onclick="financeiro()">
-            <div class="col">
-              <h2 >Financeiro</h2>
-              <img title="Financeiro" src="../Assets/planejamento-financeiro.jpg" class="card-img" alt="Financeiro">
-            </div>
-          </a>
-
-        </div>
-      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     </div>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  </div>
 </body>
 
 </html>

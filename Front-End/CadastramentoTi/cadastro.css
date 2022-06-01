@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -43,11 +42,9 @@ main,
     color: rgb(14, 11, 11);
     font-size: 20px;
     font: 400;
-    
 }
 
-
-.button-proprio {
+.btnCadastro {
     color: #f5f5f5;
     width: 150px;
     height: 40px;
@@ -58,9 +55,8 @@ main,
     border: #708E67;
     border-radius: 5px;
 }
-.button-proprio:hover{
-    background:rgb(89, 129, 29);
+
+.btnCadastro:hover {
+    background: rgb(89, 129, 29);
     color: aliceblue;
 }
-
-
