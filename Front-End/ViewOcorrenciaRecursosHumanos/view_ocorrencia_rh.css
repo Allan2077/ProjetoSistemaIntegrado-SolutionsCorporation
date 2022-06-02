@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
-
 body {
     margin: 0;
     padding: 0;
@@ -21,9 +20,8 @@ header {
 
 header a img:first-child {
     width: 450px;
-    height:130px;
+    height: 130px;
 }
-
 
 .container {
     margin: 20px;
@@ -41,14 +39,12 @@ header a img:first-child {
 aside {
     height: 95%;
     display: flex;
-
     flex-direction: column;
     align-items: center;
     justify-content: end;
 }
 
 a img {
-
     width: 100px;
     height: 15vh;
 }
@@ -59,7 +55,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     background: rgb(255, 255, 255);
 }
 
@@ -71,20 +66,24 @@ h2 {
     margin-left: 20px;
 }
 
-p{
+p {
     margin-left: 20px;
-
-  
-  
 }
 
 .title {
-
     margin: 20px 0;
     width: 100%;
+}
 
+.darkMode {
+    background: #181515 !important;
+    color: var(--branco) !important;
+}
 
-
+.darkModeCard {
+    color: rgb(255, 255, 255);
+    background: #2f352f;
+    box-shadow: rgba(61, 34, 97, 0.829) 0px 54px 55px, rgb(42, 71, 235) 0px -12px 30px, rgb(45, 28, 196) 0px 4px 6px, rgb(61, 60, 59) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px !important;
 }
 
 .desc {
@@ -92,7 +91,6 @@ p{
     display: flex;
     justify-content: start;
     align-items: center;
-    background: white;
     width: 100%;
     box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.25);
 }
@@ -104,7 +102,7 @@ p{
     justify-content: center;
 }
 
- button {
+button {
     border: none;
     font-size: 36px;
     width: 130px;
@@ -116,23 +114,17 @@ p{
     border-radius: 10px;
 }
 
-@media (max-width : 400px) {
+@media (max-width: 400px) {
     .container {
         flex-direction: column;
-
     }
-
     aside {
         flex-direction: row;
-
     }
-
     main {
-
         width: 300px;
         padding-bottom: 20px;
     }
-
     a img {
         width: 60px;
         height: 10vh;
@@ -140,6 +132,4 @@ p{
         align-items: center;
         margin: 1px 3px;
     }
-
-
 }

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,6 @@ header a img:first-child {
 }
 
 body {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +41,17 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: px;
+}
+
+.darkMode {
+    background: #181515 !important;
+    color: var(--branco) !important;
+}
+
+.darkModeCard {
+    color: rgb(255, 255, 255);
+    background: #2f352f;
+    box-shadow: rgba(61, 34, 97, 0.829) 0px 54px 55px, rgb(42, 71, 235) 0px -12px 30px, rgb(45, 28, 196) 0px 4px 6px, rgb(61, 60, 59) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px !important;
 }
 
 .col {
@@ -74,5 +83,4 @@ button {
 
 button:hover {
     background: #fbff1c8c;
-
 }

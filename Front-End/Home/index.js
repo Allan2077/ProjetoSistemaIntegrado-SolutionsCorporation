@@ -35,6 +35,7 @@ function financeiro() {
 function meusChamados() {
     window.location.href = "../Meus_Chamados/meus_chamados.html"
 }
+
 let modeChange = document.querySelector('.modeChange');
 let containerNav = document.querySelector('.container-fluid');
 let card = document.querySelector('.card');
@@ -50,7 +51,6 @@ function chngimg() {
     } else {
         document.getElementById('idlogo').src = "../Assets/LogoSolution.png";
     }
-
 }
 
 modeChange.addEventListener('click', () => {
@@ -58,11 +58,28 @@ modeChange.addEventListener('click', () => {
     card.classList.toggle("darkModeCard");
     body.classList.toggle("darkMode");
     navbar.classList.toggle("darkMode");
+    chngimg();
 
+    let dark = window.localStorage.getItem("darkmode");
 
+    console.log(dark);
 
-
-    chngimg()
-
-
+    if (dark === "false" || dark === undefined) {
+        window.localStorage.setItem("darkmode", "true");
+    } else {
+        window.localStorage.setItem("darkmode", "false");
+    }
 });
+
+let dark = window.localStorage.getItem("darkmode");
+
+if (dark === "true") {
+    modeChange.checked = true;
+    containerNav.classList.toggle("darkMode");
+    card.classList.toggle("darkModeCard");
+    body.classList.toggle("darkMode");
+    navbar.classList.toggle("darkMode");
+    chngimg();
+} else {
+    modeChange.checked = false;
+}

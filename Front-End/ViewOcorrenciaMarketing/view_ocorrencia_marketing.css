@@ -1,139 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Arsenal', sans-serif;
+}
 
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            font-family: 'Arsenal', sans-serif;
-        }
+header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-        header {
-            width: 90%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+header a img:first-child {
+    width: 450px;
+    height: 130px;
+}
 
-        header a img:first-child {
-            width: 450px;
-            height: 130px;
-        }
+.container {
+    margin: 20px;
+    padding: 0;
+    height: 85%;
+    width: 89%;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Arsenal', sans-serif;
+    background: #f5f5f5;
+}
 
- 
+aside {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
 
-     .container {
-            margin: 20px;
-            padding: 0;
-            height: 85%;
-            width: 89%;
-            gap: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            font-family: 'Arsenal', sans-serif;
-            background: #f5f5f5;
-        }
+a img {
+    width: 100px;
+    height: 150px;
+}
 
-        aside {
-            height: 95%;
-            display: flex;
-           
-            flex-direction: column;
-            align-items: center;
-            justify-content: end;
-        }
+main {
+    height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+}
 
-        a img {
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 20px;
+}
 
-            width: 100px;
-            height: 150px;
-        }
+p {
+    margin-left: 20px;
+}
 
-       main {
-            height: 90%;
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+.title {
+    margin: 20px 0;
+    width: 100%;
+}
 
-            background: #fff;
-        }
+.darkMode {
+    background: #181515 !important;
+    color: var(--branco) !important;
+}
 
-        h2 {
-            margin: 0;
-            padding: 0;
-            font-size: 40px;
-            font-weight: 400;
-            margin-left: 20px;
-        }
+.darkModeCard {
+    color: rgb(255, 255, 255);
+    background: #2f352f;
+    box-shadow: rgba(61, 34, 97, 0.829) 0px 54px 55px, rgb(42, 71, 235) 0px -12px 30px, rgb(45, 28, 196) 0px 4px 6px, rgb(61, 60, 59) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px !important;
+}
 
-        p {
-            margin-left: 20px;
-        }
+.desc {
+    height: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.25);
+}
 
-        .title {
-            
-            margin: 20px 0;
-            width: 100%;
-       
-        }
+.button-search {
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 
-        .desc {
-            height: 10%;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            background: white;
-            width: 100%;
-            box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.25);
-        }
+button {
+    border: none;
+    font-size: 36px;
+    width: 130px;
+    height: 50px;
+    color: white;
+    background: #708E67;
+    font-family: 'Arsenal', sans-serif;
+    letter-spacing: 8px;
+    border-radius: 10px;
+}
 
-        .button-search {
-            height: 90%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-        }
-        
-       button {
-            border: none;
-            font-size: 36px;
-            width: 130px;
-            height: 50px;
-            color: white;
-            background: #708E67;
-            font-family: 'Arsenal', sans-serif;
-            letter-spacing: 8px;
-            border-radius: 10px;
-        }
-
-        @media (max-width : 400px) {
-            main {
-                flex-direction: column;
-               
-            }
-
-            .controllers {
-                flex-direction: row;
-           
-            }
-
-            .container{
-                
-                width: 300px;
-                padding-bottom: 240px;
-            }
-            a img{
-                width: 60px;
-                justify-content: space-between;
-                align-items: center;
-                margin: 1px 3px;
-            }
-        
-     
-        }
+@media (max-width: 400px) {
+    main {
+        flex-direction: column;
+    }
+    .controllers {
+        flex-direction: row;
+    }
+    .container {
+        width: 300px;
+        padding-bottom: 240px;
+    }
+    a img {
+        width: 60px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1px 3px;
+    }
+}
