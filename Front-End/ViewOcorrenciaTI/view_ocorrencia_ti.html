@@ -24,45 +24,43 @@
 
         <!--------------------------Imagens laterais----------------------------------->
         <aside>
-            <a onclick="impressora()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer" id="Impressora">
                 <img src="../Assets/Impressora.svg" title="Impressora">
             </a>
 
-            <a onclick="computador()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Computador">
                 <img src="../Assets/Computador.svg" title="Computador">
             </a>
 
-            <a onclick="roteador()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Roteador">
                 <img src="../Assets/roteador.svg" title="Roteador">
             </a>
 
-
-            <a onclick="user()" style="cursor: pointer;">
-                <img src="../Assets/AddUser.svg" title="Adicionar fúncionario">
-            </a>
-
-            <a onclick="others()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Outros">
                 <img src="../Assets/more.svg" title="Outros">
             </a>
         </aside>
 
 
+        <!--------------------------Parte principal----------------------------------->
         <main>
+
             <div class="desc">
-                <h2>Impressora</h2>
+                <h2 id="status" alt="status" class="textoNovo" title="Opções ao lado">Identifique o problema...</h2>
             </div>
+
             <div class="title">
                 <h2>Descrição</h2>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, deleniti doloremque vero maxime nam reprehenderit aut molestias consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus similiquesint delectus dolorum. Lorem ipsum dolor
-                sit amet consectetur, adipisicing elit. Reiciend deleniti doloremque vero maxime nam reprehenderit aut molestias consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus similiquesint delectus dolorum.
-            </p>
-        </main>
 
-        <!--------------------------Parte principal----------------------------------->
+            <textarea placeholder="Digite seu texto.."></textarea>
+
+        </main>
+        <!--------------------------Botão lateral----------------------------------->
         <div class="button-search">
-            <button type="button" style="font-size: 20px">Enviar</button>
+            <a onclick="back()">
+                <button type="button" style="font-size: 20px; cursor: pointer;">Enviar</button>
+            </a>
         </div>
 
     </div>

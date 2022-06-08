@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,8 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0;
-    padding: 0
+
 }
 
 main {
@@ -36,11 +36,26 @@ main {
     height: 80vh
 }
 
-.container {
+table {
+    background: #E2E2E2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+td {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
 
 .darkMode {
     background: #181515 !important;
@@ -53,16 +68,6 @@ main {
     box-shadow: rgba(61, 34, 97, 0.829) 0px 54px 55px, rgb(42, 71, 235) 0px -12px 30px, rgb(45, 28, 196) 0px 4px 6px, rgb(61, 60, 59) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px !important;
 }
 
-.col {
-    background: rgb(197, 196, 196);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 80vw;
-    height: 5vh;
-    font-size: 20px;
-    font-weight: bold;
-}
 
 button {
     display: flex;

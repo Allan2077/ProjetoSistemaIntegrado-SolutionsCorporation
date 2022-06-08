@@ -1,5 +1,10 @@
+function back(){
+    window.location.href = "../Home/index.htm"
+}
+
+
 const nome = document.querySelector("#nome");
-const sobreNome = document.querySelector("#sobreNome");
+const usuario = document.querySelector("#usuario");
 const setor = document.querySelector("#setor");
 const matricula = document.querySelector("#matricula");
 
@@ -8,15 +13,15 @@ const btnCadastro = document.querySelector(".btnCadastro");
 btnCadastro.addEventListener("click", () => {
     const data = JSON.stringify({
 
+        usuario: usuario.value,
         nome: nome.value,
-        sobreNome: sobreNome.value,
         setor: setor.value,
         matricula: md5(matricula.value)
 
     });
     console.log(data);
 
-    fetch("http://10.87.207.25:3000/cadastro", {
+    fetch("http://192.168.17.6:3000/cadastro", {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",
@@ -27,11 +32,7 @@ btnCadastro.addEventListener("click", () => {
             return resp.json();
         })
         .then((data) => {
-            // if (data.length > 0) {
-            //     window.location.href = "../Home/index.html";
-            // } else {
-            //     alert("Usuário ou senha inválidos !");
-            // }
+          
             if (data != undefined) {
                 if (data.id != undefined) {
                     alert("Usuário cadastrado com sucesso !");

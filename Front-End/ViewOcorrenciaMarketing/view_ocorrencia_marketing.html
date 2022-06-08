@@ -24,11 +24,11 @@
 
         <!--------------------------Imagens laterais----------------------------------->
         <aside>
-            <a onclick="user()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Idéias">
                 <img src="../Assets/ideias.svg" title="Nova idéias">
             </a>
 
-            <a onclick="user()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Outros">
                 <img src="../Assets/more.svg" title="Outros">
             </a>
         </aside>
@@ -36,27 +36,21 @@
         <!--------------------------Parte principal----------------------------------->
         <main>
             <div class="desc">
-                <h2>Férias</h2>
+                <h2 id="status" alt="status" class="textoNovo" title="Opções ao lado"></h2>
             </div>
 
             <div class="title">
                 <h2>Descrição</h2>
             </div>
+            <textarea placeholder="Digite seu texto.."></textarea>
 
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, deleniti doloremque vero maxime nam reprehenderit aut molestias consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus similiquesint delectus dolorum. Lorem ipsum dolor
-                sit amet consectetur, adipisicing elit. Reiciendis,
-                <br>
-                </br>
-                deleniti doloremque vero maxime nam reprehenderit aut molestias consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus similiquesint delectus dolorum.
-            </p>
         </main>
 
         <!--------------------------Botão lateral----------------------------------->
         <div class="button-search">
-            <button type="button" style="font-size: 20px">Enviar</button>
-        </div>
+            <a onclick="back()">
+            <button type="button" style="font-size: 20px; cursor: pointer;">Enviar</button>
+        </a>
     </div>
     <script src="../global/loadDark.js"></script>
     <script src="view_ocorrencia_marketing.js"></script>

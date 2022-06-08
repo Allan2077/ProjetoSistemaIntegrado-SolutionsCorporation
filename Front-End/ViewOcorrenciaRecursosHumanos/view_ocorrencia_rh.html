@@ -25,24 +25,24 @@
 
         <!--------------------------Imagens laterais----------------------------------->
         <aside>
-            <a onclick="user()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Folha de pagamento">
                 <img src="../Assets/FolhaPagamento.svg" title="Folha de pagamento">
             </a>
 
-            <a onclick="user()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Ferias">
                 <img src="../Assets/ferias.svg" title="Férias">
             </a>
 
-            <a onclick="user()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Faltas Funcionarios">
                 <img src="../Assets/FaltasFuncionario.svg" title="Faltas dos funcionários">
             </a>
 
 
-            <a onclick="user()" style="cursor: pointer;">
+            <a onclick="adduser2()" style="cursor: pointer;">
                 <img src="../Assets/AddUser.svg" title="Adicionar funcionário">
             </a>
 
-            <a onclick="user()" style="cursor: pointer;">
+            <a onclick="clicado(this.id)" style="cursor: pointer;" id="Outros">
                 <img src="../Assets/more.svg" title="Outros">
             </a>
         </aside>
@@ -51,26 +51,22 @@
         <main>
 
             <div class="desc">
-                <h2>Férias</h2>
+                <h2 id="status" alt="status" class="textoNovo" title="Opções ao lado">Identifique o problema...</h2>
             </div>
 
             <div class="title">
                 <h2>Descrição</h2>
             </div>
 
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, deleniti doloremque vero maxime nam reprehenderit aut molestias consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus similiquesint delectus dolorum. Lorem ipsum dolor
-                sit amet consectetur, adipisicing elit. Reiciendis,
-                <br>
-                </br>
-                deleniti doloremque vero maxime nam reprehenderit aut molestias consectetur aspernatur, ipsa, eveniet ducimus iure culpa quaerat minus similiquesint delectus dolorum.
-            </p>
+            <textarea placeholder="Digite seu texto.."></textarea>
+         
         </main>
 
         <!--------------------------Botão lateral----------------------------------->
         <div class="button-search">
-            <button type="button" style="font-size: 20px">Enviar</button>
+            <a onclick="back()">
+            <button type="button" style="font-size: 20px; cursor: pointer;">Enviar</button>
+        </a>
         </div>
     </div>
     <script src="../global/loadDark.js"></script>

@@ -75,6 +75,16 @@ p {
     width: 100%;
 }
 
+textarea{
+    padding: 15px;
+    width: 60vw;
+    height: 57vh;
+    border: none;
+    outline: 0;
+    font-size: 25px;
+    cursor:cell;
+}
+
 .darkMode {
     background: #181515 !important;
     color: var(--branco) !important;

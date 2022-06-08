@@ -5,8 +5,11 @@ let body = document.querySelector('body');
 let navbar = document.querySelector('.navbar');
 let logo = document.querySelector('.logo');
 let container = document.querySelector('.container');
-let desc = document.querySelector('.desc');
 let main = document.querySelector('main');
+let desc = document.querySelector('.desc');
+let caixaTexto = document.querySelector('.caixaTexto');
+let comentario = document.querySelector('.comentario');
+let textarea = document.querySelector('textarea')
 
 function chngimg() {
     var img = document.getElementById('idlogo').src;
@@ -26,8 +29,13 @@ if (dark === "true") {
     container.classList.toggle("darkMode");
     desc.classList.toggle("darkModeCard");
     main.classList.toggle("darkModeCard");
-    //card.classList.toggle("darkModeCard");
     body.classList.toggle("darkMode");
+    textarea.classList.toggle('darkModeCard')
+    caixaTexto.classList.toggle("darkModeCard");
+    comentario.classList.toggle('darkModeCard');
+    
     //navbar.classList.toggle("darkMode");
+    //card.classList.toggle("darkModeCard");
+    
     chngimg();
 }

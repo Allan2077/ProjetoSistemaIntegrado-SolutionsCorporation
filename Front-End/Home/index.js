@@ -4,6 +4,31 @@ console.log(userData);
 
 document.querySelector("#nome-logado").innerHTML = "Olá, " + userData.nome;
 
+document.querySelector("#notification");
+
+
+
+
+
+
+
+function alert (){
+    var nota = document.getElementById('notification').innerHTML= 1;
+    if(nota === 2){
+        console.log("ok")
+    }else{
+        console.log("deu errado")
+    }
+}
+alert();
+
+
+
+
+
+
+
+
 function user() {
     window.location.href = "../Login/login.html";
 }
@@ -83,3 +108,7 @@ if (dark === "true") {
 } else {
     modeChange.checked = false;
 }
+
+
+
+
