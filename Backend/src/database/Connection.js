@@ -18,16 +18,13 @@ const sync = () => {
     cadastro.init(sequelize);
     chamado.init(sequelize);
     enviar.init(sequelize);
-   
+
 
     cadastro.associate(sequelize.models);
     chamado.associate(sequelize.models);
     enviar.associate(sequelize.models);
-   
-    
 
-
-    sequelize.sync({ force : false });
+    sequelize.sync({ force: false });
 }
 
 module.exports = {

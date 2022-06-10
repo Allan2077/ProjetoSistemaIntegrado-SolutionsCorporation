@@ -10,7 +10,7 @@ btLogin.addEventListener("click", () => {
     });
     console.log(data);
 
-    fetch("http://10.2.0.108:3000/login", {
+    fetch("http://10.87.207.18:3000/login", {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",

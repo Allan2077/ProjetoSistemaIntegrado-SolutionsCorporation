@@ -1,73 +1,78 @@
 const Cadastro = require('../model/cadastro');
+const { Op } = require("sequelize");
 
-const create = async (req, res) => {
+const create = async(req, res) => {
     const data = req.body;
 
-    let ret = [];
+    console.log(data);
 
-    try {
-        ret = await Cadastro.create(data);
-
-        delete ret.dataValues.senha;
-    }catch(err) {
-        console.log(err);
-        // if(err !== 'ER_DUP_ENTRY') {
-        //     ret = {
-        //         msg: 'Usuario já cadastrado'
-        //     }
-        //     res.status(400);
-        // }
-    }
+    const ret = await Cadastro.create(data);
 
     res.json(ret);
 }
 
-const read = async (req, res) => {
-    let filtro = {};
-    
-    let id = req.params.id;
+const read = async(req, res) => {
+    const id = req.params.id;
 
-    if(id != undefined) filtro = { where : { id: id }}
+    let filtro = {};
+
+    if (id !== undefined) filtro = { where: { id: id } };
 
     const ret = await Cadastro.findAll(filtro);
 
+    //const ret = await Alerta.findAll((req.params.id) ? {where: {id: req.params.id}} : {});
+
     res.json(ret);
 }
 
-const update = async (req, res) => {
+const readFinalizadosBySetor = async(req, res) => {
+    const setor = req.params.setor
+
+    console.log(setor)
+
+    let ret = await Cadastro.findAll({
+        where: {
+            // BUSCAR POR SETOR IGUAL A SETOR
+            setor,
+            // BUSCAR POR STATUS NÃO IGUAS A 3 // OUN SEJA, DIFERENTE DE FINALIZADO
+            status: {
+                [Op.ne]: 3,
+            }
+        }
+    })
+
+
+    res.json(ret);
+}
+
+const update = async(req, res) => {
     const id = req.params.id;
 
     const data = req.body;
 
-    let ret = await Cadastro.update(data, {
-        where : { id: id}
-    });
+    let ret = await Cadastro.update(data, { where: { id: id } });
 
-    ret = await Cadastro.findAll({ 
-        attributes: {
-            exclude: ['matricula']
-        },
-        where : {id: id}
-    })
+    ret = await Cadastro.findAll({ where: { id: id } });
 
     res.json(ret);
 }
 
-const remove = async (req, res) => {
+const remove = async(req, res) => {
     const id = req.params.id;
 
-    const ret = await Cadastro.destroy({
-        where: {id: id}
-    })
-    
-    if(ret == 1) {
-        res.json({id: id});
-    }else {
+    const ret = await Cadastro.destroy({ where: { id: id } });
+
+    if (ret == 1) {
+        res.json({ id: id })
+    } else {
         res.status(400).send();
     }
+
+    //(ret == 1) ? res.json({id: id}) : res.status(400).send();
+    //res.json({id: (ret == 1) ? id : 0});
 }
 
-const login = async (req, res) => {
+const login = async(req, res) => {
     const data = req.body;
 
     console.log(data);
@@ -90,5 +95,6 @@ module.exports = {
     read,
     update,
     remove,
+    readFinalizadosBySetor,
     login,
 }

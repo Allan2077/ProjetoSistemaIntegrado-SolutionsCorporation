@@ -30,8 +30,8 @@ btnEnviar.addEventListener("click", () => {
 
     let bb = ''
 
-    const keyys = ['descricao', 'ocorrencia', 'status', 'comentario', 'data']
-    
+    const keyys = ['descricao', 'ocorrencia', 'status', 'comentario', 'data', 'setor']
+
     keyys.forEach(elm => {
         const att = objBody[elm]
         if (att === undefined || !att || att === null) {
@@ -47,28 +47,25 @@ btnEnviar.addEventListener("click", () => {
     const data = JSON.stringify(objBody);
     console.log(data);
 
-    fetch("http://10.2.0.108:3000/chamado", {
+    fetch("http://10.87.207.18:3000/chamado", {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",
             },
             "body": data
         })
-        .then(async (resp) => {
-            const data= await resp.json();
+        .then(async(resp) => {
+            const data = await resp.json();
             return data
         })
         .then((data) => {
-          console.log(data)
+            console.log(data)
             if (data != undefined) {
                 if (data.id != undefined) {
-                    alert("Usuário cadastrado com sucesso !");
+                    alert("Enviado com sucesso !");
                 }
             } else {
                 alert("Falha ao cadastradar, ", data);
             }
         });
 })
-
-
-

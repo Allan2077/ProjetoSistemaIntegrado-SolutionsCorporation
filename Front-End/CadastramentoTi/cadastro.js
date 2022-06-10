@@ -1,4 +1,4 @@
-function back(){
+function back() {
     window.location.href = "../Home/index.htm"
 }
 
@@ -21,7 +21,7 @@ btnCadastro.addEventListener("click", () => {
     });
     console.log(data);
 
-    fetch("http://10.2.0.108:3000/cadastro", {
+    fetch("http://10.87.207.18:3000/cadastro", {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",
@@ -32,7 +32,7 @@ btnCadastro.addEventListener("click", () => {
             return resp.json();
         })
         .then((data) => {
-          
+
             if (data != undefined) {
                 if (data.id != undefined) {
                     alert("Usuário cadastrado com sucesso !");

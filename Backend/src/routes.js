@@ -6,6 +6,7 @@ const CadastroController = require('../src/controller/CadastroController');
 const ChamadoController = require('../src/controller/ChamadoController');
 const EnviarController = require('../src/controller/EnviarController');
 
+
 route.post('/login', CadastroController.login);
 
 route.post('/cadastro', CadastroController.create);
