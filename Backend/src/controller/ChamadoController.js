@@ -1,4 +1,5 @@
 const Chamado = require('../model/chamado');
+const { Op } = require("sequelize");
 
 const create = async (req, res) => {
     const data = req.body;
@@ -20,6 +21,24 @@ const read = async (req, res) => {
     const ret = await Chamado.findAll(filtro);
 
     //const ret = await Alerta.findAll((req.params.id) ? {where: {id: req.params.id}} : {});
+
+    res.json(ret);
+}
+
+const readFinalizadosBySetor = async (req, res) => {
+    const setor = req.params.setor
+
+    console.log(setor)
+
+    let ret = await Chamado.findAll({where: {
+        // BUSCAR POR SETOR IGUAL A SETOR
+        setor,
+        // BUSCAR POR STATUS NÃO IGUAS A 3 // OUN SEJA, DIFERENTE DE FINALIZADO
+        status: {
+            [Op.ne]: 3, 
+        }
+    }})
+
 
     res.json(ret);
 }
@@ -56,4 +75,5 @@ module.exports = {
     read,
     update,
     remove,
+    readFinalizadosBySetor,
 }

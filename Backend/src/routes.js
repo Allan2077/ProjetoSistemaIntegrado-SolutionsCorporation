@@ -20,6 +20,8 @@ route.get('/chamado/:id', ChamadoController.read);
 route.put('/chamado/:id', ChamadoController.update);
 route.delete('/chamado/:id', ChamadoController.remove);
 
+route.get('/chamado/setorNFinalizados/:setor', ChamadoController.readFinalizadosBySetor);
+
 route.post('/enviar', EnviarController.create);
 route.get('/enviar', EnviarController.read);
 route.get('/enviar/:id', EnviarController.read);

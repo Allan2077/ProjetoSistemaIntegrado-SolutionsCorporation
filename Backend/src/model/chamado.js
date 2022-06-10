@@ -32,7 +32,13 @@ class chamado extends Model {
                     type: DataTypes.DATE,
                     allowNull: false,
                     
-                }
+                },
+
+                setor: {
+                    type: DataTypes.STRING(50),
+                    allowNull: false,
+                    
+                },
 
             },
             {
