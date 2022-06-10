@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -30,7 +31,7 @@ header a img:first-child {
 
 
 main {
-  
+
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -55,16 +56,24 @@ h2 {
     padding: 0;
     font-size: 35px;
     font-weight: 400;
-    margin-left: 20px; 
-   
-    
+    margin-left: 20px;
+
+
 }
 
-p{
-    margin-left: 20px;
+.titleComentario {
+   width: 63vw;
+}
+
+
+
+
+
+p {
+    margin-left: 40px;
     font-family: 'Arsenal', sans-serif;
     font-size: 20px;
-    
+
 }
 
 .caixaTexto {
@@ -73,12 +82,12 @@ p{
     font-size: 20px;
     height: 10vh;
     font-weight: 400;
-    width:100%;
-    outline:none; 
+    width: 100%;
+    outline: none;
     border: 1px solid rgb(209, 206, 206);
 }
 
-.comentario{
+.comentario {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -132,19 +141,21 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background: rgb(201, 32, 2);
-animation:forwards;
+    animation: forwards;
 }
 
 @media (max-width: 400px) {
     main {
         flex-direction: column;
     }
+
     .container {
         width: 300px;
         padding-bottom: 240px;
     }
+
     a img {
         width: 60px;
         justify-content: space-between;

@@ -7,7 +7,7 @@ function buttonAberto(chamado) {
 
 
 function listarChamados() {
-    fetch("http://10.87.207.18:3000/chamado")
+    fetch("http://192.168.17.6:3000/chamado")
         .then((resp) => {
             return resp.json();
         })
