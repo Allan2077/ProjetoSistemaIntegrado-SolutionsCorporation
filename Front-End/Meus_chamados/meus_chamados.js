@@ -6,8 +6,9 @@ function buttonAberto(chamado) {
 };
 
 
+
 function listarChamados() {
-    fetch("http://192.168.17.6:3000/chamado")
+    fetch("http://10.2.0.111:3000/chamado")
         .then((resp) => {
             return resp.json();
         })
@@ -48,6 +49,7 @@ function listarChamados() {
                 linha.appendChild(colStatus);
 
                 tbody.appendChild(linha);
+                console.log(chamado.lenght);
             })
         })
 }

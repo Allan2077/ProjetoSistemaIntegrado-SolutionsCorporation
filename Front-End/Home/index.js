@@ -12,15 +12,6 @@ document.querySelector("#notification");
 
 
 
-function alert (){
-    var nota = document.getElementById('notification').innerHTML= 1;
-    if(nota === 2){
-        console.log("ok")
-    }else{
-        console.log("deu errado")
-    }
-}
-alert();
 
 
 
@@ -109,6 +100,31 @@ if (dark === "true") {
     modeChange.checked = false;
 }
 
+var numeChamados;
 
+function chamadosAbertos(){
+    fetch("http://localhost:3000/chamado/count/TI")
+    .then((resp) => {
+        return resp.json();
+    })
+    .then((data) => {
+        numeChamados = data;
+        console.log(numeChamados);
+        document.getElementById('notification').innerHTML= numeChamados;
+    })
+}
+
+chamadosAbertos();
+
+/* function alert (){
+    var nota = document.getElementById('notification').innerHTML= numeChamados;
+    if(nota === 2){
+        console.log("ok")
+    }else{
+        console.log("deu errado")
+    }
+}
+alert();
+ */
 
 

@@ -2,6 +2,10 @@ const login = document.querySelector("#login");
 const password = document.querySelector("#password");
 const btLogin = document.querySelector(".btnLogin");
 
+const ip = window.location.hostname;
+
+console.log(ip);
+
 btLogin.addEventListener("click", () => {
     const data = JSON.stringify({
         usuario: login.value,
@@ -10,7 +14,7 @@ btLogin.addEventListener("click", () => {
     });
     console.log(data);
 
-    fetch("http://192.168.17.6:3000/login", {
+    fetch("http://10.2.0.111:3000/login", {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",

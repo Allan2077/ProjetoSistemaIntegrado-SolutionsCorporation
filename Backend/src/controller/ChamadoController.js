@@ -25,6 +25,20 @@ const read = async (req, res) => {
     res.json(ret);
 }
 
+const getSize = async (req, res) => {
+    const id = req.params.id;
+
+    let filtro = {};
+
+    if(id !== undefined) filtro = {where: {id: id}};
+
+    const ret = await Chamado.count();
+
+    //const ret = await Alerta.findAll((req.params.id) ? {where: {id: req.params.id}} : {});
+
+    res.json(ret);
+}
+
 const readFinalizadosBySetor = async (req, res) => {
     const setor = req.params.setor
 
@@ -76,4 +90,5 @@ module.exports = {
     update,
     remove,
     readFinalizadosBySetor,
+    getSize
 }
