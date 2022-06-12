@@ -51,23 +51,23 @@
         <main>
 
             <div class="desc">
-                <h2 id="status" alt="status" class="textoNovo" title="Opções ao lado">Identifique o problema...</h2>
+                <h2 id="descricao" alt="status" class="textoNovo" title="Opções ao lado">Identifique o problema...</h2>
             </div>
 
             <div class="title">
-                <h2>Descrição</h2>
+                <h2>Comentário</h2>
             </div>
 
-            <textarea placeholder="Digite seu texto.."></textarea>
+            <textarea placeholder="Digite seu texto.."  id="comentario"></textarea>
          
         </main>
-
         <!--------------------------Botão lateral----------------------------------->
         <div class="button-search">
-            <a onclick="back()">
-            <button type="button" style="font-size: 20px; cursor: pointer;">Enviar</button>
-        </a>
+            <a id="btnEnviar">
+                <button type="button" style="font-size: 20px; cursor: pointer;">Enviar</button>
+            </a>
         </div>
+
     </div>
     <script src="../global/loadDark.js"></script>
     <script src="view_ocorrencia_rh.js"></script>

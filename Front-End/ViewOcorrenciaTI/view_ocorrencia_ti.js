@@ -1,15 +1,14 @@
 const comentarioInput = document.querySelector("#comentario");
 const descricao = document.querySelector("#descricao");
 
-function user() {
-    window.location.href = "../CadastramentoTi/cadastro.html"
-}
+
 
 function clicado(idclicado) {
 
     descricao.innerHTML = idclicado;
 
 }
+
 
 
 
@@ -47,7 +46,7 @@ btnEnviar.addEventListener("click", () => {
     const data = JSON.stringify(objBody);
     console.log(data);
 
-    fetch("http://10.2.0.111:3000/chamado", {
+    fetch("http://192.168.17.6:3000/chamado", {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",

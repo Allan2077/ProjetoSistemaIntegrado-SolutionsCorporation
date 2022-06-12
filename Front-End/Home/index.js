@@ -6,20 +6,6 @@ document.querySelector("#nome-logado").innerHTML = "Olá, " + userData.nome;
 
 document.querySelector("#notification");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function user() {
     window.location.href = "../Login/login.html";
 }
@@ -96,22 +82,23 @@ if (dark === "true") {
     body.classList.toggle("darkMode");
     navbar.classList.toggle("darkMode");
     chngimg();
+
 } else {
     modeChange.checked = false;
 }
 
 var numeChamados;
 
-function chamadosAbertos(){
+function chamadosAbertos() {
     fetch("http://localhost:3000/chamado/count/TI")
-    .then((resp) => {
-        return resp.json();
-    })
-    .then((data) => {
-        numeChamados = data;
-        console.log(numeChamados);
-        document.getElementById('notification').innerHTML= numeChamados;
-    })
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            numeChamados = data;
+            console.log(numeChamados);
+            document.getElementById('notification').innerHTML = numeChamados;
+        })
 }
 
 chamadosAbertos();

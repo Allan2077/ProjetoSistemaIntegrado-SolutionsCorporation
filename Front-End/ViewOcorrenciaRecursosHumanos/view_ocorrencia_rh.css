@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -25,8 +25,7 @@ header a img:first-child {
 
 .container {
     margin: 20px;
-    padding: 0;
-    height: 85%;
+    height: 70vh;
     width: 89%;
     gap: 16px;
     display: flex;
@@ -44,28 +43,27 @@ aside {
     justify-content: end;
 }
 
-a img {
-    width: 100px;
-    height: 15vh;
-}
-
 main {
     height: 90%;
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: rgb(255, 255, 255);
+    background: #fff;
 }
 
-h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 40px;
-    font-weight: 400;
-    margin-left: 20px;
+
+/* Se for 5 icones reduza o height para 13vh */
+a img {
+    width: 100px;
+    height: 13vh;
 }
 
+h2 {   
+    font-size: 3vh;
+    font-weight: 300;
+    text-indent: 1rem;
+}
 p {
     margin-left: 20px;
 }
@@ -73,16 +71,6 @@ p {
 .title {
     margin: 20px 0;
     width: 100%;
-}
-
-textarea{
-    padding: 15px;
-    width: 60vw;
-    height: 57vh;
-    border: none;
-    outline: 0;
-    font-size: 25px;
-    cursor:cell;
 }
 
 .darkMode {
@@ -105,6 +93,17 @@ textarea{
     box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.25);
 }
 
+textarea{
+    
+    width: 99.8%;
+    height: 54vh;
+    border: none;
+    outline: 0;
+    font-size: 25px;
+    cursor:text;
+    text-indent: 12px;
+}
+
 .button-search {
     height: 90%;
     display: flex;
@@ -124,16 +123,20 @@ button {
     border-radius: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 498px) {
+    
     .container {
         flex-direction: column;
     }
     aside {
         flex-direction: row;
+        gap: 6vw;
     }
     main {
-        width: 300px;
+        width: 80vw;
+        height: 52vh;
         padding-bottom: 20px;
+        
     }
     a img {
         width: 60px;
@@ -141,5 +144,27 @@ button {
         justify-content: space-between;
         align-items: center;
         margin: 1px 3px;
+        gap:4px
+    }
+
+button {
+    border: none;
+    font-size: 36px;
+    width: 130px;
+    height: 4vh;
+    color: white;
+    background: #708E67;
+    font-family: 'Arsenal', sans-serif;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+   
+    h2 {
+
+        font-size: 2vh;
+        font-weight: 400;
+        margin-left: 20px;
+     
     }
 }

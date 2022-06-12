@@ -20,7 +20,7 @@ if (dark === "true") {
     body.classList.toggle("darkMode");
     tr.classList.toggle('darkModeCard');
     main.classList.toggle('darkMode')
-
+    
     //card.classList.toggle("darkModeCard");
     
     chngimg();

@@ -1,3 +1,4 @@
+
 let modeChange = document.querySelector('.modeChange');
 let containerNav = document.querySelector('.container-fluid');
 let card = document.querySelector('.card');
@@ -9,7 +10,8 @@ let main = document.querySelector('main');
 let desc = document.querySelector('.desc');
 let caixaTexto = document.querySelector('.caixaTexto');
 let comentario = document.querySelector('.comentario');
-let textarea = document.querySelector('textarea')
+let textarea = document.querySelector('textarea');
+
 
 function chngimg() {
     var img = document.getElementById('idlogo').src;
@@ -21,21 +23,28 @@ function chngimg() {
 
 }
 
-let dark = window.localStorage.getItem("darkmode");
+
 let darkCard = window.localStorage.getItem("darkmodeCard");
+let dark = window.localStorage.getItem("darkmode");
+
 
 
 if (dark === "true") {
     container.classList.toggle("darkMode");
-    desc.classList.toggle("darkModeCard");
     main.classList.toggle("darkModeCard");
+    desc.classList.toggle("darkModeCard");
     body.classList.toggle("darkMode");
-    textarea.classList.toggle('darkModeCard')
+    textarea.classList.toggle('darkModeCard');
     caixaTexto.classList.toggle("darkModeCard");
-    comentario.classList.toggle('darkModeCard');
+    comentario.classList.toggle("darkModeCard");
     
-    //navbar.classList.toggle("darkMode");
+
+    
+    
     //card.classList.toggle("darkModeCard");
+    //navbar.classList.toggle("darkMode");
     
     chngimg();
+
+    
 }
