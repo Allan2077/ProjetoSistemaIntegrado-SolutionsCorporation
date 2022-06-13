@@ -52,7 +52,7 @@ btnEnviar.addEventListener("click", () => {
     const data = JSON.stringify(objBody);
     console.log(data);
 
-    fetch("http://192.168.17.6:3000/chamado", {
+    fetch("http://192.168.100.2:3000/chamado", {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",

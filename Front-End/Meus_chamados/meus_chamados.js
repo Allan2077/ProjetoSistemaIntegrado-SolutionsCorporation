@@ -8,12 +8,14 @@ function buttonAberto(chamado) {
 
 
 function listarChamados() {
-    fetch("http://192.168.17.6:3000/chamado")
+    fetch("http://192.168.100.2:3000/chamado")
         .then((resp) => {
             return resp.json();
         })
         .then((data) => {
             data.forEach((chamado) => {
+                console.log(chamado.id);
+
                 let ocorrencia = JSON.stringify(chamado);
                 let status;
 

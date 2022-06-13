@@ -24,6 +24,7 @@ route.delete('/chamado/:id', ChamadoController.remove);
 route.get('/chamado/setorNFinalizados/:setor', ChamadoController.readFinalizadosBySetor);
 
 route.get('/chamado/count/:setor', ChamadoController.getSize);
+route.get('/chamado/remove/:id', ChamadoController.remove);
 
 route.post('/enviar', EnviarController.create);
 route.get('/enviar', EnviarController.read);
