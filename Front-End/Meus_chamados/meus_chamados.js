@@ -23,9 +23,6 @@ function listarChamados() {
 
                 let linha = document.createElement("tr");
 
-                let colOcorrencia = document.createElement("td");
-                colOcorrencia.innerHTML = chamado.ocorrencia;
-
                 let colSetor = document.createElement("td");
                 colSetor.innerHTML = chamado.setor;
 
@@ -43,7 +40,7 @@ function listarChamados() {
 
                 colStatus.appendChild(buttonStatus);
 
-                linha.appendChild(colOcorrencia);
+              
                 linha.appendChild(colSetor);
                 linha.appendChild(colDescricao);
                 linha.appendChild(colStatus);
