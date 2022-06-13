@@ -23,7 +23,7 @@ class chamado extends Model {
                 },
 
                 comentario: {
-                    type: DataTypes.STRING(640),
+                    type: DataTypes.STRING(1080),
                     allowNull: false,
                     
                 },
