@@ -1,7 +1,8 @@
 let modeChange = document.querySelector('.modeChange');
-let body = document.querySelector('body');
+let table = document.querySelector('table')
 let tr = document.querySelector('tr');
-let main = document.querySelector('main')
+let body = document.querySelector('body');
+let main = document.querySelector('main');
 
 function chngimg() {
     var img = document.getElementById('idlogo').src;
@@ -19,7 +20,8 @@ let darkCard = window.localStorage.getItem("darkmodeCard");
 if (dark === "true") {
     body.classList.toggle("darkMode");
     tr.classList.toggle('darkModeCard');
-    main.classList.toggle('darkMode')
+    main.classList.toggle('darkMode');
+    table.classList.toggle('darkModeCard');
     
     //card.classList.toggle("darkModeCard");
     

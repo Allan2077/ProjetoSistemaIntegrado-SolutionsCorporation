@@ -6,12 +6,12 @@ class chamado extends Model {
             {   
             
                 descricao: {
-                    type: DataTypes.STRING(340),
+                    type: DataTypes.STRING(640),
                     allowNull: false,
                 },
 
                 ocorrencia: {
-                    type: DataTypes.STRING(150),
+                    type: DataTypes.STRING(550),
                     allowNull: false,
                 },
                
@@ -23,7 +23,7 @@ class chamado extends Model {
                 },
 
                 comentario: {
-                    type: DataTypes.STRING(340),
+                    type: DataTypes.STRING(640),
                     allowNull: false,
                     
                 },

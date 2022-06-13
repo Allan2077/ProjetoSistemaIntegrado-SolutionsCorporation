@@ -52,8 +52,7 @@ main {
 }
 
 h2 {
-    margin: 0;
-    padding: 0;
+
     font-size: 35px;
     font-weight: 400;
     margin-left: 20px;
@@ -62,7 +61,7 @@ h2 {
 }
 
 .titleComentario {
-   width: 63vw;
+    width: 63vw;
 }
 
 
@@ -70,17 +69,17 @@ h2 {
 
 
 p {
-    margin-left: 40px;
+    margin-left: 2px;
     font-family: 'Arsenal', sans-serif;
     font-size: 20px;
 
 }
 
 .caixaTexto {
-    position: relative;
+
     font-family: 'Arsenal', sans-serif;
     font-size: 20px;
-    height: 10vh;
+    height: 100;
     font-weight: 400;
     width: 100%;
     outline: none;
@@ -91,7 +90,8 @@ p {
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 0px;
 
 }
 

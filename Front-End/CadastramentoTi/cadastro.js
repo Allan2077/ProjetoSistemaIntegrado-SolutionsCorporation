@@ -21,7 +21,7 @@ btnCadastro.addEventListener("click", () => {
     });
     console.log(data);
 
-    fetch("http://192.168.100.2:3000/cadastro", {
+    fetch("http://192.168.17.6:3000/cadastro", {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",

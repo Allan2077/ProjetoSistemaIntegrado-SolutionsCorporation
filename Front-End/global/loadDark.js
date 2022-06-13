@@ -11,6 +11,7 @@ let desc = document.querySelector('.desc');
 let caixaTexto = document.querySelector('.caixaTexto');
 let comentario = document.querySelector('.comentario');
 let textarea = document.querySelector('textarea');
+let titleComentario = document.querySelector('.titleComentario')
 
 
 function chngimg() {
@@ -35,10 +36,11 @@ if (dark === "true") {
     desc.classList.toggle("darkModeCard");
     body.classList.toggle("darkMode");
     textarea.classList.toggle('darkModeCard');
-    caixaTexto.classList.toggle("darkModeCard");
+    caixaTexto.classList.toggle("darkMode");
     comentario.classList.toggle("darkModeCard");
+    titleComentario.classList.toggle("darkModeCard")
     
-
+    
     
     
     //card.classList.toggle("darkModeCard");

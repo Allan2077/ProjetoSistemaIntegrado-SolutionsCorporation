@@ -49,9 +49,10 @@ table {
 
 tr {
     display: flex;
+    
     align-content: start;
     justify-content: space-around;
-    width: 100vw;
+    width: 90vw;
 }
 
 td {
