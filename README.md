@@ -28,7 +28,8 @@
 
 #Tela lista de chamados em aberto
 
-![listaDeChamados](https://user-images.githubusercontent.com/63480432/177669209-d5b71a5f-4416-4d48-98cf-cb02f97cc611.png)
+
+![listaDeFinalizar](https://user-images.githubusercontent.com/63480432/177675863-8f77d6cd-d44e-4d8c-aa02-d5311e673426.png)
 
 
 #Tela de finalizar chamados
