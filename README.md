@@ -1,6 +1,6 @@
 # README
 
-<p align="center"> Sistema Integrado</p>
+<p align="center"> Solutions Corporation</p>
 
 <p align="center">
 <a href="#sobre">Sobre *</a>
